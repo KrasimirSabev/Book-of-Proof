@@ -1,0 +1,257 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm, logicproof}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+%Styling Examples, Definitions, Exercises, Facts
+\theoremstyle{definition}
+\newtheorem{example}{Example}[subsection]
+\newtheorem{defn}{Definition}[subsection]
+\newtheorem{fact}{Fact}[subsection]
+\newtheorem{exercise}{Exercise}[section]
+
+%================
+
+%Some shorthand notation might include more later
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%Solution Env
+\newenvironment{solution}
+    {\begin{proof}[Solution]}
+    {\end{proof}}
+
+\title{Book of Proof: Notes and Exercises}
+\author{KS}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+\section{Fundamentals}
+\subsection{Introduction to Sets}
+
+All of mathematics can be described with sets. Set theory is \emph{a} perfectly suitable language to express and describe all types of mathematical structures. 
+
+Think of a \emph{set} a collection of things. The things are called \emph{elements} of the set. It's somewhat worth noting here that we're only concerned with sets that express mathematical entities like functions, numbers, points, etc.
+Set construction: $\{ 2, 3, 4, 5 \}$ is a set which has $4$ elements. Some sets have infinitely many elements, *not all* sets are finite.
+
+We say that two sets are \emph{equal} if they contain exactly the same elements. So: 
+	$\{ 2,3,4,5 \}=\{ 2, 4,3,5 \}$ but $\{ 2,3,4,5 \}\neq\{ 2,4,6,8 \}$. 
+
+To express that an element is \emph{member} of a set, we write $2\in A$, where $A$ is a set containing $2$ as an element. 
+Some sets are very important and we reserve special symbols for them, like: 
+$$
+\mathbb{N,Z,R,Q,C}
+$$  
+
+Sets don't have to contain only numbers, for example $B=\{ T,F \}$ or $C=\{ a,b,c,d,e \}$, or $D=\{ (0,0), (1,0), (0,1), (1,1) \}$. A set can have \emph{other sets as elements}: 
+$$
+K=\{1, \{ 2,3 \}, \{ 2,4 \}  \}
+$$
+It's really important to note here that $K$ has $3$ elements. $1, \{ 2, 3 \}, \{ 2,4 \} \in K$ but $2, 3,4 \notin K$.
+
+If a set $X$ is finite, we say that $X$'s \emph{cardinality} is the number of elements it has, and this number is denoted by $|X|$. 
+An example of a special set is $\varnothing$. It is called the empty set and it enjoys the unique status of having no members and thus $|\varnothing|=0$. 
+
+We have special \emph{set builder notation} to describe sets that are too large or too complex to list between braces. Consider the infinite set of even integers $E=\{ \dots,-4,-2,2,4,6 \dots \}$. We can instead write 
+$$
+E=\{ 2n|n\in\mathbb{Z} \}.
+$$
+We read it "the set of all things of form" $2n$, $|$ "such that", $n$ "is a member of" the set of integers. 
+The following generalised structure follows for set-builder notation: 
+$$X=\{ \mathrm{expression}: \mathrm{rule} \};$$
+where the elements of $X$ are understood to be *all values of expression* that are specified by the *rule*. 
+
+\begin{example}
+    
+$$
+\begin{aligned}
+1.~ \{ n:n~\mathrm{is~prime} \} = \{ 2,3,5,7,11,13,17... \}\\
+2.~ \{ n\in\mathbb{N}: n\mathrm{~is~prime} \} = \{ 2,3,5,7,11,13,17 \}\\
+3.~ \{ x\in\mathbb{R}: x^2-2=0 \} = \{ \sqrt2,\sqrt-2 \}\\
+4.~ \{ x\in\mathbb{Z}:x^2-2=0 \} = \varnothing\\
+5.~ \{ x\in\mathbb{Z}: |2x|<4 \} = \{ -1,0,1 \}
+\end{aligned}
+$$
+\end{example}
+
+\begin{example}
+Describe the set $A=\{ 7a+3b: a,b\in\mathbb{Z} \}$. 
+\begin{solution}
+The set $A$ is equivalent to the expression $7a+3b$, where the rule for finding $a,b$ is that they are members of the set of integers. Consider which integers. Let $n$ be any integer, then $n=7n+3(-2n)$, such that $n=a$ and $b=-2n$. So, $n\in A$. It follows that $A$ contains only integers, and furthermore, \emph{every integer is an element of} $A$. So $A=\mathbb{Z}$.    
+\end{solution}  
+\end{example}
+
+
+\emph{Important:} Set-builder notation for $\mathbb{Q}$: 
+$$
+\mathbb{Q} = \{ x: x = \frac {m}{n} \mathrm{~where~}m,n\in\mathbb{Z}\land n\neq 0 \}
+$$
+
+\subsection{Exercises from Section 1}
+\begin{exercise}
+    Write each of the following sets by listing their elements between braces. 
+    $$
+    \begin{aligned}
+    1. \{ 5x-1:x\in\Z \} &\quad\quad 9. \{ x\in\R:\sin\pi x=0 \}\\
+    2. \{ 3x+2:x\in\Z \} &\quad\quad 10. \{ x\in\R:\cos x=1 \}\\
+    3. \{ x\in\Z:-2\le x\le 7 \} &\quad\quad 11. \{ x\in Z:\lvert x \rvert < 5 \}\\
+    4. \{ x\in N: -2 < x \le 7\} &\quad\quad 12. \{ x\in\Z: \lvert 2x \rvert<5 \}\\
+    5. \{ x\in\R:x^2=3 \} &\quad\quad 13. \{ x\in\Z:\lvert 6x \rvert < 5 \}\\
+    6. \{ x\in\R:x^2=9 \} &\quad\quad 14. \{ 5x:x\in\Z,\lvert 2x \rvert\le 8 \}\\
+    7. \{ x\in\R:x^2+5x=-6 \} &\quad\quad 15. \{ 5a+2b:a,b\in\Z \}\\
+    8. \{ x\in\R:x^3+5x^2=-6x \} &\quad\quad 16. \{ 6a+2b:a,b\in\Z \}.
+    \end{aligned}
+    $$
+\end{exercise}
+
+\begin{exercise}
+    Write each of the following sets in set-builder notation.
+    $$
+    \begin{aligned}
+    17. \{ 2,4,8,16,32,64,\dots \} &\quad\quad 23. \{ 3,4,5,6,7,8 \}\\
+    18. \{ 0,4,16,36,64,100,\dots \} &\quad\quad 24. \{ -4,-3,-2,-1,0,1,2 \}\\
+    19. \{ \dots,-6,-3,0,3,6,9,12,15 \} &\quad\quad 25. \{ \dots,\frac{1}{8},\frac{1}{4},\frac{1}{2},1,2,4,8,\dots \}\\
+    20. \{ \dots,-8,-3,2,7,12,17,\dots \} &\quad\quad 26. \{ \dots,\frac{1}{27},\frac{1}{9},\frac{1}{3},1,3,9,27,\dots \}\\
+    21. \{ 0,1,4,9,16,25,36,\dots \} &\quad\quad 27. \{ \dots,-\pi,-\frac{\pi}{2},0,\frac{\pi}{2}, \pi,\frac{3\pi}{2},2\pi,\frac{5\pi}{2},\dots \}\\
+    22. \{ 3,6,11,18,27,38,\dots \} &\quad\quad 28.\{ \dots,-\frac{3}{2},-\frac{3}{4},0,\frac{3}{4},\frac{3}{2},\frac{9}{4},3,\frac{15}{4},\frac{9}{2},\dots \}.
+    \end{aligned}
+    $$
+\end{exercise}
+
+\begin{exercise}
+    Find the following cardinalities. 
+    $$
+    \begin{aligned}
+    29. \lvert \{ \{ 1 \},\{ 2,\{ 3,4 \} \},\varnothing \} \rvert &\quad\quad 34. \lvert \{ x\in\N:\lvert x \rvert<10 \} \rvert\\
+    30. \lvert \{ \{ 1,4 \},a,b,\{ \{ 3,4 \} \},\{ \varnothing \} \} \rvert &\quad\quad 35. \lvert \{ x\in\Z:x^2<10 \} \rvert\\
+    31. \lvert \{ \{ \{ 1 \},\{ 2, \{ 3,4 \} \},\varnothing \} \} \rvert &\quad\quad 36. \lvert \{ x\in\N:x^2<10 \} \rvert\\
+    32. \lvert \{ \{ \{ 1,4 \},a,b,\{ \{ 3,4 \} \},\{ \varnothing \} \} \} \rvert &\quad\quad 37. \lvert \{ x\in\N:x^2<0 \} \rvert\\
+    33. \lvert \{ x\in\Z: \lvert x \rvert<10 \} \rvert &\quad\quad 38. \lvert \{ x\in\N:5x\le 20 \} \rvert.
+    \end{aligned}
+    $$
+\end{exercise}
+
+\begin{exercise}
+    Sketch the following sets of points in the $xy$-plane. 
+    $$
+    \begin{aligned}
+    39. \{ (x,y): x\in[1,2],y\in[1,2] \} &\quad\quad 46. \{ (x,y):x,y\in\R, x^2+y^2\le1 \}\\
+    40. \{ (x,y): x\in[0,1],y\in[1,2] \} &\quad\quad 47. \{ (x,y):x,y\in\R,y\ge x^2-1 \}\\
+    41. \{ (x,y):x\in[-1,1],y=1 \} &\quad\quad 48. \{ (x,y):x,y\in\R,x>1 \}\\
+    42. \{ (x,y): x=2, y\in[0,1] \} &\quad\quad 49. \{ (x,x+y):x\in\R,y\in\Z \}\\
+    43. \{ (x,y): \lvert x \rvert=2,y\in[0,1] \} &\quad\quad 50. \{ (x,\frac{x^2}{y}):x\in\R,y\in\N \}\\
+    44. \{ (x,x^2):x\in\R \} &\quad\quad 51. \{ (x,y)\in\R^2:(y-x)(y+x)=0 \}\\
+    45. \{ (x,y):x,y\in\R,x^2+y^2=1 \} &\quad\quad 52. \{ (x,y)\in\R^2:(y-x^2)(y+x^2)=0 \}.
+    \end{aligned}
+    $$
+\end{exercise}
+\subsection{The Cartesian Product}
+Think of the Cartesian product as a type of multiplication. 
+$$
+A \times B 
+$$
+In order to understand products better we will define an \emph{ordered pair}.
+\begin{defn}
+An ordered pair is a list of the form $x,y$ of two things, namely $x$ and $y$, enclosed in parenthesis and separated by a comma.\footnote{Additionally, one can use the Kuratowski ordered pair definition, i.e. $\{\{x\}, \{x,y\}\}=(x,y)$. However, the one given above, even though slightly cryptic is easier to grasp for someone who has never encountered sets before.}
+\end{defn}
+
+There are many ordered pairs, consider the ordered pair $(2,4)$. Now, if we swap the numbers around, that would be an ordered pair as well, i.e. $(4,2)$. However, these two pairs are not identical, meaning 
+$$
+(2,4) \ne (4,2).
+$$
+Ordered pairs can be used to describe points on a plane (as it is done in Calculus and Linear Algebra for example). Similarly to our previous talk about sets, ordered pairs need not be \emph{just} numbers, they can be letters as well. 
+\begin{example}
+    The set $(\{2,3\}, \{3,4\})$ can be an ordered pair of two sets, say $A,B$, then $(\{2,3\},\{3,4\})=(A,B)$;\\
+    $\alpha,\beta$ can also be a pair;
+    finally, $((2,3),(3,4))$ can be an ordered pair of an ordered pair. 
+\end{example}
+So, the following definition of Cartesian Products is important: 
+\begin{defn}
+    The Cartesian Product of two sets $A,B$ is a set, denoted by 
+    $$
+    A\times B
+    $$
+    and defined as 
+    $$
+    A\times B = \{(a,b): a\in A, b\in B\}.
+    $$
+\end{defn}
+
+The following is a more visual example of how ordered pairs are formed.
+\begin{example}
+    Let $A=\{k,l,m\}, B=\{o,p\}$ for $A,B$ some sets, then the product of A with B is 
+    $$
+    A\times B = \{(k,o),(k,p),(l,o),(l,p),(m,o),(m,p)\}.
+    $$
+    Schematically, one can think of these pairs in terms of rows and columns or in terms of a corrdinate system where $A$ is the $x$-axis and $B$ is the $y$-axis. 
+\end{example}
+The following is a fact: 
+\begin{fact}
+    If $A,B$ are finite sets, then $\lvert A\times B \rvert = \lvert A \rvert\cdot \lvert B \rvert.$
+\end{fact}
+
+\begin{example}
+    Let $A=\{1,2,3,4,5,6\}$ and suppose these are dice values. The Cartesian Product of A with itself is 
+    $$
+    A\times A = A^{2}.
+    $$
+The product of $A$ with itself will be a finite set of ordered pairs. 
+$$
+\lvert A\times A \rvert = \lvert A \rvert \cdot \lvert A \rvert= 6\cdot 6 = 36.
+$$
+Think of the product as rolling a dice twice an recording the outcome, where the first roll corresponds to the first result and the second to the second result. 
+
+\begin{example}
+Another few very useful examples are the sets: 
+$$
+\begin{aligned}
+\R \times \R &= \{(x,y): x,y \in \R\}\\
+\R \times \N &= \{(x,y): x\in \R, y\in \N\}\\
+\N^{2} &= \{(x,y): x,y\in \N\}. 
+\end{aligned}
+$$
+\end{example}
+The first example is best described as a coordinate system or an $xy$-plane. The second example is simply all points on the plane, whose second coordinate is a natural number. The third example, is best described as the first quadrant of the $xy$-plane, where every $x,y$ are natural numbers.  
+\end{example}
+
+It is possible for one factor of a Cartesian product to be a Cartesian Product itself. Suppose the following: 
+$$
+\R \times (\N \times \Z) =\{x, (y,z): x\in \R, (y,z)\in \N\times \Z\}.
+$$
+There is a different way to think about these pairs. They are called \emph{ordered triples}. 
+The brackets are optional in the above example, one can also write 
+$$
+\R \times \N \times Z = \{(x,y,z): x\in \R, y\in \N, z\in Z\}.
+$$
+\emph{In general} we can define 
+$$
+A_{1}\times A_2\times \dots \times A_n =\{(x_1,x_2,\dots,x_n): x_1\in A_1,x_2\in A_2,\dots,x_n\in A_n\},
+$$
+or more succinctly, 
+$$
+A_{1}\times A_2 \times \dots \times A_n =\{(x_1,x_2,\dots,x_n): x_i\in A_i\} \text{ for } i=\{1,2,3,\dots,n\}
+$$
+
+\begin{example}
+    Represent the two sides of a coin by the set $S=(H,T)$, the possible outcomes of tossing the coin seven times in a row can be described as: 
+    \begin{solution}
+        This is the representation
+        $$
+        S^7=\{(x_1,x_2,\dots,x_7): x_1,x_2,\dots,x_7 \in S\}.
+        $$
+        Now to find the possible outcomes: 
+        $$
+        \lvert S^7 \rvert = 7 \cdot 7 \cdot \dots 7= 128.
+        $$
+    \end{solution}
+\end{example}
+I believe the following to be clear but still worth noting. Notice that the cardinality of the product of $S$ with itself seven times is written inside the $\lvert  \rvert$ and not outside. This might seem like a silly thing to say, however syntax is very important. 
+
+\subsection{Exercises from Section 2}
+
+\end{document}
