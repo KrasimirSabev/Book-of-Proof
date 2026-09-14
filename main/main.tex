@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm, logicproof}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+%Styling Examples, Definitions, Exercises, Facts
+\theoremstyle{definition}
+\newtheorem{example}{Example}[subsection]
+\newtheorem{defn}{Definition}[subsection]
+\newtheorem{fact}{Fact}[subsection]
+\newtheorem{exercise}{Exercise}[section]
+
+%================
+
+%Some shorthand notation might include more later
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%Solution Env
+\newenvironment{solution}
+    {\begin{proof}[Solution]}
+    {\end{proof}}
+
+
+\title{Book of Proof: Condensed Version with All Exercise Solutions}
+\author{KS}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\clearpage
+
+\input{Chapter-1/Chapter-1}
+\input{Answer-key/Answers-to-all-exercises}
+\end{document}

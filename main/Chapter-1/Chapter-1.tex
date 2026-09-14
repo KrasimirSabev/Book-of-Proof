@@ -1,35 +1,4 @@
-\documentclass{article}
-\usepackage{amsmath, amssymb, amsthm, logicproof}
-\usepackage{geometry}
-\usepackage{hyperref}
-
-%Styling Examples, Definitions, Exercises, Facts
-\theoremstyle{definition}
-\newtheorem{example}{Example}[subsection]
-\newtheorem{defn}{Definition}[subsection]
-\newtheorem{fact}{Fact}[subsection]
-\newtheorem{exercise}{Exercise}[section]
-
-%================
-
-%Some shorthand notation might include more later
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-
-%Solution Env
-\newenvironment{solution}
-    {\begin{proof}[Solution]}
-    {\end{proof}}
-
-\title{Book of Proof: Notes and Exercises}
-\author{KS}
-\date{\today}
-
-\begin{document}
-\maketitle
-\tableofcontents
-\clearpage
+% !TEX root = ../main.tex
 
 \section{Fundamentals}
 \subsection{Introduction to Sets}
@@ -93,7 +62,7 @@ $$
 $$
 
 \subsection{Exercises from Section 1}
-\begin{exercise}
+\begin{exercise}\label{ex:1.1}
     Write each of the following sets by listing their elements between braces. 
     $$
     \begin{aligned}
@@ -107,9 +76,10 @@ $$
     8. \{ x\in\R:x^3+5x^2=-6x \} &\quad\quad 16. \{ 6a+2b:a,b\in\Z \}.
     \end{aligned}
     $$
+    \hyperref[sol:1.1]{[Go to Solution]}
 \end{exercise}
 
-\begin{exercise}
+\begin{exercise}\label{ex:1.2}
     Write each of the following sets in set-builder notation.
     $$
     \begin{aligned}
@@ -123,7 +93,7 @@ $$
     $$
 \end{exercise}
 
-\begin{exercise}
+\begin{exercise}\label{ex:1.3}
     Find the following cardinalities. 
     $$
     \begin{aligned}
@@ -136,7 +106,7 @@ $$
     $$
 \end{exercise}
 
-\begin{exercise}
+\begin{exercise}\label{ex:1.4}
     Sketch the following sets of points in the $xy$-plane. 
     $$
     \begin{aligned}
@@ -150,6 +120,7 @@ $$
     \end{aligned}
     $$
 \end{exercise}
+
 \subsection{The Cartesian Product}
 Think of the Cartesian product as a type of multiplication. 
 $$
@@ -253,7 +224,7 @@ $$
 I believe the following to be clear but still worth noting. Notice that the cardinality of the product of $S$ with itself seven times is written inside the $\lvert  \rvert$ and not outside. This might seem like a silly thing to say, however syntax is very important. 
 
 \subsection{Exercises from Section 2}
-\begin{exercise}
+\begin{exercise}\label{ex:2.1}
     Write out the indicated sets by listing their elements between braces. 
     \begin{enumerate}
         \item Suppose $A=\{ 1,2,3,4 \},B=\{ a,c \}.$ 
@@ -306,7 +277,7 @@ I believe the following to be clear but still worth noting. Notice that the card
     \end{enumerate}
 \end{exercise}
 
-\begin{exercise}
+\begin{exercise}\label{ex:2.2}
     Sketch these Cartesian Products on the $xy$-plane (or in $\R^3$ for the last two).
     $$
     \begin{aligned}
@@ -319,4 +290,3 @@ I believe the following to be clear but still worth noting. Notice that the card
     \end{aligned}
     $$
 \end{exercise}
-\end{document}
