@@ -105,7 +105,7 @@ $$
     33. \lvert \{ x\in\Z: \lvert x \rvert<10 \} \rvert &\quad\quad 38. \lvert \{ x\in\N:5x\le 20 \} \rvert.
     \end{aligned}
     $$
-\end{exercise}
+\end{exercise}\hyperref[sol:1.3]{[Go to Solution]}
 
 \begin{exercise}\label{ex:1.4}
     Sketch the following sets of points in the $xy$-plane. 
@@ -120,7 +120,8 @@ $$
     45. \{ (x,y):x,y\in\R,x^2+y^2=1 \} &\quad\quad 52. \{ (x,y)\in\R^2:(y-x^2)(y+x^2)=0 \}.
     \end{aligned}
     $$
-\end{exercise}
+\end{exercise}\hyperref[sol:1.4]{[Go to Solution]}
+
 
 \subsection{The Cartesian Product}
 Think of the Cartesian product as a type of multiplication. 
@@ -276,7 +277,7 @@ I believe the following to be clear but still worth noting. Notice that the card
         $
         \item $\{ 0,1 \}^4.$
     \end{enumerate}
-\end{exercise}
+\end{exercise}\hyperref[sol:2.1]{[Go to Solution]}
 
 \begin{exercise}\label{ex:2.2}
     Sketch these Cartesian Products on the $xy$-plane (or in $\R^3$ for the last two).
@@ -290,4 +291,62 @@ I believe the following to be clear but still worth noting. Notice that the card
         (14) [1,2]\times \{ 1,1.5,2 \} &\quad\quad \{ (x,y)\in\R^2:x^2+y^2\le 1 \}\times[0,1]
     \end{aligned}
     $$
-\end{exercise}
+\end{exercise}\hyperref[sol:2.2]{[Go to Solution]}
+
+\subsection{Subsets}
+It is common that every element, or some elements of a set $A$ are also elements of another set $B$. Consider the following: 
+$$
+A=\{ 1,2,3 \}, B=\{ 0,1,2,3,4,5 \}.
+$$
+In cases as this one, we say that $A\subseteq B$, we might even say that $A\subset B$ (since all elements of $A$ are contained within $B$).
+
+\begin{defn}
+    Suppose $A,B$ are sets. If every element of $A$ is also an element of $B$, then we say that $A\subseteq B$. We write $A\not\subseteq B$ if $A$ is \emph{not} a subset of $B$ i.e., if it is not true that \emph{every} element of $A$ is also an element of $B$. So $A\not\subseteq B$ tells us that \emph{at least one} element of the set on the left is not contained in the set on the right.
+\end{defn}
+
+\begin{example}
+    Some key examples are the following: 
+    \begin{enumerate}
+        \item $\{ 2,3,7 \}\subseteq \{ 2,3,4,5,6,7 \}$;
+        \item $\{ 2,3,7 \}\not\subseteq \{ 2,3,4,5,6 \}$;
+        \item $\N\subseteq\Z\subseteq\Q\subseteq\R$;
+        \item $\R\times\N\subseteq\R^2$;
+        \item $A\subseteq A$, any set $A$ is a subset of itself; 
+        \item $\varnothing\subseteq\varnothing.$
+    \end{enumerate}
+\end{example}
+
+These examples bring out an important fact about the empty set. \newline
+\begin{center}
+ \boxed{\text{If } B \text{ is any set whatsoever, then } \varnothing\subseteq B}.   
+\end{center}
+
+\begin{fact}
+    The empty set is a subset of all sets, that is, $\varnothing\subseteq B$ for any set $B$.
+    \begin{proof}
+        Let $B$ be any set, then consider the definition of subset. Then if $\varnothing\not\subseteq B$ this would mean that there are \emph{some} members of $\varnothing$ which are not members of $B$. However, we know that by definition $x\notin\varnothing$, or more formally 
+        $$
+        \varnothing = \{ x:x\ne x \}.
+        $$
+        Therefore, $\varnothing\subseteq B.$
+    \end{proof}
+    \emph{Comment:} This proof technique is called \emph{Proof by Contradiction} and it does come up a lot in the exercises later on, so it is worth trying to understand what is happening at this stage, however, the proof strategy will be explained in detail later. 
+\end{fact}
+
+\begin{fact}
+    If $\lvert B \rvert=n$, then $B$ has $2^n$ subsets. Further, for \emph{any finite} set $B$ that has $n$ number of elements, then $B$ has $2^n$ subsets.    
+\end{fact}
+
+\begin{example}
+    Consider the subsets of the set $B=\{ 1,2,\{ 1,3 \} \}$, there are $3$ elements so $2^3$. 
+    $$
+    \{\varnothing,\{ 1 \},\{ 2 \}, \{ \{ 1,3 \} \}, \{ 1,2 \},\{ 1,2,\{ 1,3 \} \}, \{ 1,\{ 1,3 \} \},\{ 2,\{ 1,3 \} \}\}.
+    $$
+    
+    \emph{Important:} It is really important to notice that $\{ 1,3 \}$ is \textbf{not} a subset of $B$. As in: 
+    $$
+    \{ 1,3 \}\not\subseteq B \text{ but }\{ 1,3 \}\in B, \text{ however, } \{ \{ 1,3 \} \}\subseteq B.
+    $$
+\end{example}
+
+
