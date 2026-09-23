@@ -386,4 +386,40 @@ These examples bring out an important fact about the empty set.
     \end{enumerate}
 \end{exercise}\hyperref[sol:3.3]{[Go to Solution]}
 
+\section{Powersets}
 
+\begin{defn}
+    If $A$ is a set, the \emph{power set} of $A$ is another set, denoted $\powerset(A)$ and defined to be the set of \emph{all} subsets of $A$. Formally, 
+    $$
+    \powerset(A)=\{ X:X\subseteq A \}.
+    $$
+\end{defn}
+
+Suppose that we have some set $A=\{ 1,2,3 \}$, then $\powerset(A)=\{ \varnothing,\{ 1 \},\{ 2 \},\{ 3 \}, \{ 1,2 \},\{ 1,3 \},\{ 2,3 \},\{ 1,2,3 \} \}$. 
+A \emph{finite} set of $n$-elements has $w^n$ subsets and the powerset of that set has $2^n$-elements. 
+
+\begin{fact}
+    If $A$ is a finite set, then $\lvert \powerset(A) \rvert=2^{\lvert A \rvert}$.
+\end{fact}
+
+\begin{example}
+    $$
+    \powerset(\{ a \})\times\powerset(\{ \varnothing \})=\{ (\{ a \},\{ \varnothing \}), (\{ a \},\varnothing), (\varnothing,\varnothing),(\varnothing, \{ \varnothing \}) \}.
+    $$
+    This example might appear a little bit intimidating, however consider the following: 
+    $$
+    \powerset(\{ a \})=\{ \varnothing,\{ a \} \} \quad \powerset(\{ \varnothing \})=\{ \varnothing,\{ \varnothing \} \}.
+    $$
+    Then we simply pair the elements together. 
+\end{example}
+
+Next, some \emph{wrong} facts about powersets. 
+\begin{enumerate}
+    \item $\powerset(1)=\{ \varnothing,\{ 1 \} \}$ is meaningless, since $1$ is not a set. \footnote{There could be some debate here, this is what is says in the textbook, so I will follow it, however we can express $1=\{\{ \varnothing \} \}$ when we consider the $V$-hierarchy of set construction.}
+    \item $\powerset(\{ 1,\{ 1,2 \} \})=\{ \varnothing,\{ 1 \},\{ \{ 1,2 \} \},\{ 1,\{ 1,2 \} \} \}$ becuase $\{ 1,2 \}\not\subseteq \{ 1,\{ 1,2 \} \}$, however $\{ 1,2 \}\in\powerset{\{ 1,\{ 1,2 \} \}}$.\footnote{The correct statement would be $\{ \{ 1,2 \} \}\subseteq\powerset(\{ 1,\{ 1,2 \} \})$.}
+    \item $\powerset(\{ 1,\{ 1,2 \} \})$ but $\{ \{ 1 \} \}\not\subseteq \{ 1,\{ 1,2 \} \}$, the reasoing is similar as in the previous footnote. 
+\end{enumerate}
+
+It is not possible to list all the members of a powerset of $A$ if $A$ is \emph{infinite.}
+
+\subsection{Exercises From Section 4}

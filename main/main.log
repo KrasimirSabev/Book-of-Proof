@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.21)  20 SEP 2026 21:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.21)  23 SEP 2026 08:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -502,24 +502,24 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count322
@@ -577,16 +577,16 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 31.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./main.toc)
@@ -597,27 +597,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Chapter-1/Chapter-1.tex [2
 
-] [3] [4] [5] [6] [7] [8] [9]) (./Answer-key/Answers-to-all-exercises.tex [10] [11] [12] [13] [14] [15] [16] [17]) [18] [19] (./main.aux)
+] [3] [4] [5] [6] [7] [8] [9]
+Overfull \hbox (39.55109pt too wide) in paragraph at lines 398--400
+[]\OT1/cmr/m/n/10 Suppose that we have some set $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 g$\OT1/cmr/m/n/10 , then $\OMS/cmsy/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 f\U/msb/m/n/10 ?\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OMS/cmsy/m/n/10 gg$\OT1/cmr/m/n/10 .
+ []
+
+) (./Answer-key/Answers-to-all-exercises.tex [10] [11] [12] [13] [14] [15] [16] [17] [18]) [19] [20] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4F88F16DEC9BE4840364D4406B8B1FFE;3258.
+(rerunfilecheck)             Checksum: 788BB658EF93F2BF718D09A5DC7156E1;3541.
  ) 
 Here is how much of TeX's memory you used:
- 23358 strings out of 474927
- 429761 string characters out of 5763541
- 1944785 words of memory out of 5000000
- 44437 multiletter control sequences out of 15000+600000
+ 23372 strings out of 474927
+ 429904 string characters out of 5763541
+ 1945785 words of memory out of 5000000
+ 44440 multiletter control sequences out of 15000+600000
  566884 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,10n,107p,577b,1052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (19 pages, 263409 bytes).
+Output written on main.pdf (20 pages, 270132 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 110 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 347 compressed objects within 4 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

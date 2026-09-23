@@ -5,12 +5,14 @@
 \contentsline {subsection}{\numberline {2.1}Exercises from Section 2}{7}{subsection.2.1}%
 \contentsline {section}{\numberline {3}Subsets}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Exercises from Section 3}{9}{subsection.3.1}%
-\contentsline {part}{II\hspace {1em}Answers to All Exercises}{10}{part.2}%
-\contentsline {section}{\numberline {4}Solutions to Exercises From Section 1}{11}{section.4}%
-\contentsline {section}{\numberline {5}Solutions to Exercises from Section 2}{16}{section.5}%
-\contentsline {section}{\numberline {6}Solutions to Exercises from Section 3}{18}{section.6}%
-\contentsline {section}{\numberline {7}Solutions to Exercises from Section 4}{19}{section.7}%
-\contentsline {section}{\numberline {8}Solutions to Exercises from Section 5}{19}{section.8}%
-\contentsline {section}{\numberline {9}Solutions to Exercises from Section 6}{19}{section.9}%
-\contentsline {section}{\numberline {10}Solutions to Exercises from Section 7}{19}{section.10}%
-\contentsline {section}{\numberline {11}Solutions to Exercises from Section 8}{19}{section.11}%
+\contentsline {section}{\numberline {4}Powersets}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Exercises From Section 4}{11}{subsection.4.1}%
+\contentsline {part}{II\hspace {1em}Answers to All Exercises}{11}{part.2}%
+\contentsline {section}{\numberline {5}Solutions to Exercises From Section 1}{12}{section.5}%
+\contentsline {section}{\numberline {6}Solutions to Exercises from Section 2}{17}{section.6}%
+\contentsline {section}{\numberline {7}Solutions to Exercises from Section 3}{19}{section.7}%
+\contentsline {section}{\numberline {8}Solutions to Exercises from Section 4}{20}{section.8}%
+\contentsline {section}{\numberline {9}Solutions to Exercises from Section 5}{20}{section.9}%
+\contentsline {section}{\numberline {10}Solutions to Exercises from Section 6}{20}{section.10}%
+\contentsline {section}{\numberline {11}Solutions to Exercises from Section 7}{20}{section.11}%
+\contentsline {section}{\numberline {12}Solutions to Exercises from Section 8}{20}{section.12}%
