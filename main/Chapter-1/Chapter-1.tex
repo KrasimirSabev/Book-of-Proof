@@ -423,3 +423,67 @@ Next, some \emph{wrong} facts about powersets.
 It is not possible to list all the members of a powerset of $A$ if $A$ is \emph{infinite.}
 
 \subsection{Exercises From Section 4}
+\begin{exercise}\label{ex:4.1}
+    Write the following sets by listing their elements between braces. 
+    \begin{enumerate}
+        \item $\powerset(\{ \{ a,b \},\{ c \} \})$
+        \item $\powerset(\{ 1,2,3,4 \})$
+        \item $\powerset(\{ \{ \varnothing \},5 \})$
+        \item $\powerset(\{ \R,\Q \})$
+        \item $\powerset(\powerset(\{ 2 \}))$
+        \item $\powerset(\{ 1,2 \})\times\powerset(\{ 3 \})$
+        \item $\powerset(\{ a,b \})\times\powerset(\{ 0,1 \})$
+        \item $\powerset(\{ 1,2 \}\times \{ 3 \})$
+        \item $\powerset(\{ a,b \}\times \{ 0 \})$
+        \item $\{ X\in\powerset(\{ 1,2,3 \}):\lvert X \rvert\le 1 \}$
+        \item $\{ X\subseteq\powerset(\{ 1,2,3 \}):\lvert X \rvert\le 1 \}$
+        \item $\{ X\in\powerset(\{ 1,2,3 \}):2\in X \}$.
+    \end{enumerate}
+\end{exercise}\hyperref[sol:4.1]{[Go to Solution]}
+
+\begin{exercise}\label{ex:4.2}
+    Suppose that $\lvert A \rvert=m,\lvert B \rvert=n$. Find the following cardinalities. 
+    \begin{enumerate}
+        \item $\lvert \powerset\powerset\powerset(A) \rvert$
+        \item $\lvert \powerset\powerset(A) \rvert$
+        \item $\lvert \powerset(A\times B) \rvert$
+        \item $\lvert \powerset(A)\times\powerset(B) \rvert$
+        \item $\lvert \{ X\in\powerset(A):\lvert X \rvert\le 1 \} \rvert$
+        \item $\lvert \powerset(A\times\powerset(B)) \rvert$
+        \item $\lvert \powerset\powerset\powerset(A\times\varnothing) \rvert$
+        \item $\lvert \{ X\subseteq\powerset(A):\lvert X \rvert\le 1 \} \rvert$.
+    \end{enumerate}
+\end{exercise}\hyperref[sol:4.2]{[Go to Solution]}
+
+\section{Union, Intersection, Difference}
+The same way numbers can be combined with operations such as addition, multiplication, subtraction, and division, we have similar operations for sets too. 
+\begin{defn}
+    Let $A,B$ be sets then: 
+    \begin{enumerate}
+        \item The \emph{union} of $A,B$ is $A\cup B=\{ x:x\in A\lor x\in B \}$
+        \item The \emph{intersection} of $A,B$ is $A\cap B=\{ x:x\in A\land x\in B \}$
+        \item The \emph{difference} of $A,B$ is $A-B=\{ x:x\in A\land x\notin B \}$ 
+    \end{enumerate}
+\end{defn}
+
+Let us consider the following examples: 
+\begin{example}
+    Let $A=\{ a,b,c,d,e \},B=\{ d,e,f \},C=\{ 1,2,3 \}$: 
+    \begin{enumerate}
+        \item $A\cup B=\{ a,b,c,d,e,f \}$
+        \item $A\cap B=\{ d,e,f \}$
+        \item $A-B=\{ a,b,c \}$
+        \item $B-A=\{ f \}$
+        \item $(A-B)\cup(B-A)=\{ a,b,c \}\cup\{ f \}=\{ a,b,c,f \}$
+        \item $A\cup C=\{ a,b,c,d,e,1,2,3 \}$
+        \item $A\cap C=\varnothing$
+        \item $A-C=\{ a,b,c,d,e \}$
+        \item $(A\cap C)\cup(A-C)=\varnothing \cup \{ a,b,c,d,e \}=\{ a,b,c,d,e \}$
+        \item $(A\cap B)\times B=\{ d,e \}\times \{ d,e,f \}=\{ (d,d),(d,e),(d,f),(e,d),(e,e),(e,f) \}$
+        \item $(A\times C)\cap(B\times C)=\{(d,1),(d,2),(d,3),(e,1),(e,2),(e,3)\}$.
+    \end{enumerate}
+\end{example}
+
+\emph{Important:} It is always true that $X\cap Y=Y\cap X, X\cup Y=Y\cup X$. In other words, these are \emph{commutable operations.} However, in general, $X-Y\ne Y-X.$
+
+\subsection{Exercises and Solutions for Section 5}
