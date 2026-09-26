@@ -13,8 +13,8 @@
 \contentsline {section}{\numberline {6}Solutions to Exercises From Section 1}{14}{section.6}%
 \contentsline {section}{\numberline {7}Solutions to Exercises from Section 2}{19}{section.7}%
 \contentsline {section}{\numberline {8}Solutions to Exercises from Section 3}{24}{section.8}%
-\contentsline {section}{\numberline {9}Solutions to Exercises from Section 4}{24}{section.9}%
-\contentsline {section}{\numberline {10}Solutions to Exercises from Section 5}{24}{section.10}%
-\contentsline {section}{\numberline {11}Solutions to Exercises from Section 6}{24}{section.11}%
-\contentsline {section}{\numberline {12}Solutions to Exercises from Section 7}{24}{section.12}%
-\contentsline {section}{\numberline {13}Solutions to Exercises from Section 8}{24}{section.13}%
+\contentsline {section}{\numberline {9}Solutions to Exercises from Section 4}{25}{section.9}%
+\contentsline {section}{\numberline {10}Solutions to Exercises from Section 5}{25}{section.10}%
+\contentsline {section}{\numberline {11}Solutions to Exercises from Section 6}{25}{section.11}%
+\contentsline {section}{\numberline {12}Solutions to Exercises from Section 7}{25}{section.12}%
+\contentsline {section}{\numberline {13}Solutions to Exercises from Section 8}{25}{section.13}%
