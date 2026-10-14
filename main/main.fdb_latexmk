@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1791206002 "d:/LaTeX notes/Book of Proof/main/main.tex" "main.pdf" "main" 1791206014 0
-  "Answer-key/Answers-to-all-exercises.tex" 1791205394 34038 0ec0215009b0aa23b0cae02305a030f0 ""
-  "Chapter-1/Chapter-1.tex" 1791206002 24126 43ae73c01dc901d0de9cf702519d945d ""
+["pdflatex"] 1791986149 "d:/LaTeX notes/Book of Proof/main/main.tex" "main.pdf" "main" 1791986160 0
+  "Answer-key/Answers-to-all-exercises.tex" 1791986148 35084 72c5247301036683f61b77a2d03d77b5 ""
+  "Chapter-1/Chapter-1.tex" 1791984444 27113 69937aa8a8008920a1aa3280a0481231 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1695209167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1695207099 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1695207099 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -49,6 +49,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1695207099 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1695207099 32442 c975af247b6702f7ca0c299af3616b80 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1695207099 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb" 1695207099 33366 60462f3d16c3d0f024f1f856e64b09cd ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1695207099 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1695211370 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1695207257 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -178,11 +179,11 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1695251233 4721891 a1ad6110735ab1e410b2de96572ab420 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1695251774 8183509 ab3dff5a7e79bb6dffda490ca9b80f80 ""
   "c:/texlive/2023/texmf.cnf" 1695251149 713 e69b156964470283e0530f5060668171 ""
-  "d:/LaTeX notes/Book of Proof/main/main.tex" 1790778996 951 10e037322896ad0419493eca2c3eac01 ""
-  "main.aux" 1791206012 5855 2e1e51967f312b6a0f9dc291e5637094 "pdflatex"
-  "main.out" 1791206012 3940 ecfe46a6853307a32d7f3a083be086eb "pdflatex"
-  "main.tex" 1790778996 951 10e037322896ad0419493eca2c3eac01 ""
-  "main.toc" 1791206012 1719 e4a4d493effe68e9aa197b85bd5cdbe5 "pdflatex"
+  "d:/LaTeX notes/Book of Proof/main/main.tex" 1791982730 951 2a6df472f00f2d596ef7c7dd0e982ab9 ""
+  "main.aux" 1791986156 6868 8a320a9f1ba02d6f1b2896f69a8bc128 "pdflatex"
+  "main.out" 1791986156 4228 92c3fe7f3eca195c7446f5b717671256 "pdflatex"
+  "main.tex" 1791982730 951 2a6df472f00f2d596ef7c7dd0e982ab9 ""
+  "main.toc" 1791986156 1879 687d1fa718fa4d7300aba00ddd9a8171 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

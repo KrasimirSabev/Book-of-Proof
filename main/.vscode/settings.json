@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.jj": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/d:\\LaTeX notes\\Book of Proof\\main\\main.aux": true,
+        "**/d:\\LaTeX notes\\Book of Proof\\main\\main.log": true,
+        "**/d:\\LaTeX notes\\Book of Proof\\main\\main.gz": true,
+        "**/d:\\LaTeX notes\\Book of Proof\\main\\main.out": true
+    }
+}
