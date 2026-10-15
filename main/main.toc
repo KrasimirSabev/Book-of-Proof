@@ -11,12 +11,15 @@
 \contentsline {subsection}{\numberline {5.1}Exercises From Section 5}{13}{subsection.5.1}%
 \contentsline {section}{\numberline {6}Complements}{14}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Exercises for Section 6}{14}{subsection.6.1}%
-\contentsline {part}{II\hspace {1em}Answers to All Exercises}{15}{part.2}%
-\contentsline {section}{\numberline {7}Solutions to Exercises From Section 1}{16}{section.7}%
-\contentsline {section}{\numberline {8}Solutions to Exercises from Section 2}{21}{section.8}%
-\contentsline {section}{\numberline {9}Solutions to Exercises from Section 3}{26}{section.9}%
-\contentsline {section}{\numberline {10}Solutions to Exercises from Section 4}{28}{section.10}%
-\contentsline {section}{\numberline {11}Solutions to Exercises from Section 5}{30}{section.11}%
-\contentsline {section}{\numberline {12}Solutions to Exercises from Section 6}{31}{section.12}%
-\contentsline {section}{\numberline {13}Solutions to Exercises from Section 7}{31}{section.13}%
-\contentsline {section}{\numberline {14}Solutions to Exercises from Section 8}{31}{section.14}%
+\contentsline {section}{\numberline {7}Venn Diagrams}{15}{section.7}%
+\contentsline {section}{\numberline {8}Indexed Sets}{16}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Exercises for Section 8}{17}{subsection.8.1}%
+\contentsline {part}{II\hspace {1em}Answers to All Exercises}{17}{part.2}%
+\contentsline {section}{\numberline {9}Solutions to Exercises From Section 1}{18}{section.9}%
+\contentsline {section}{\numberline {10}Solutions to Exercises from Section 2}{23}{section.10}%
+\contentsline {section}{\numberline {11}Solutions to Exercises from Section 3}{28}{section.11}%
+\contentsline {section}{\numberline {12}Solutions to Exercises from Section 4}{30}{section.12}%
+\contentsline {section}{\numberline {13}Solutions to Exercises from Section 5}{32}{section.13}%
+\contentsline {section}{\numberline {14}Solutions to Exercises from Section 6}{33}{section.14}%
+\contentsline {section}{\numberline {15}Solutions to Exercises from Section 7}{35}{section.15}%
+\contentsline {section}{\numberline {16}Solutions to Exercises from Section 8}{35}{section.16}%
