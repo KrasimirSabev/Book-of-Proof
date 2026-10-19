@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.21)  17 OCT 2026 14:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.21)  19 OCT 2026 16:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,12 +602,12 @@ Overfull \hbox (8.03056pt too wide) in paragraph at lines 660--661
 [][]\OT1/cmr/bx/n/10 Exercise 8.2. []\OT1/cmr/m/n/10 Sup-pose $\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 10\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 24\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; A[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 24\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; A[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 12\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 24\OMS/cmsy/m/n/10 g$\OT1/cmr/m/n/10 .
  []
 
-[17]) (./Answer-key/Answers-to-all-exercises.tex [18] [19] [20] [21] [22] [23] [24] [25]
+[17] [18]) (./Answer-key/Answers-to-all-exercises.tex [19] [20] [21] [22] [23] [24] [25] [26]
 Overfull \hbox (44.82932pt too wide) detected at line 356
 [][]
  []
 
-[26] [27] [28] [29] [30] [31] [32] [33]
+[27] [28] [29] [30] [31] [32] [33] [34]
 Overfull \hbox (8.82669pt too wide) in paragraph at lines 853--854
  [][] 
  []
@@ -622,27 +622,27 @@ Overfull \hbox (8.82669pt too wide) in paragraph at lines 907--908
  [][] 
  []
 
-[34] [35] [36]) [37] (./main.aux)
+[35] [36] [37] [38] [39]) [40] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 616A4D33180FF985AB7A0BB6A91850E3;4643.
+(rerunfilecheck)             Checksum: 5C3FF8404B4911ED91182B2FBB2B8089;4985.
  ) 
 Here is how much of TeX's memory you used:
- 23968 strings out of 474927
- 439659 string characters out of 5763541
- 1975785 words of memory out of 5000000
- 44872 multiletter control sequences out of 15000+600000
+ 23976 strings out of 474927
+ 439734 string characters out of 5763541
+ 1973785 words of memory out of 5000000
+ 44874 multiletter control sequences out of 15000+600000
  568130 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,577b,1054s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,11n,107p,737b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (37 pages, 399758 bytes).
+Output written on main.pdf (40 pages, 412724 bytes).
 PDF statistics:
- 780 PDF objects out of 1000 (max. 8388607)
- 682 compressed objects within 7 object streams
- 282 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 805 PDF objects out of 1000 (max. 8388607)
+ 703 compressed objects within 8 object streams
+ 288 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -696,7 +696,7 @@ $$
 \begin{exercise}\label{ex:8.7}
     
     $$
-    (1)~\bigcup\R\times[i,i+1]\quad \quad \bigcap\R\times[i,i+1]
+    (1)~\bigcup_{i\in\N}\R\times[i,i+1]\quad \quad \bigcap_{i\in\N}\R\times[i,i+1]
     $$
     
 \end{exercise}\hyperref[sol:8.7]{[Go to Solution]}
@@ -740,3 +740,25 @@ $$
 \begin{exercise}\label{ex:8.14}
     If $J\ne\varnothing,J\subseteq I$, does it follow that $\bigcap_{\alpha\in I}A_{\alpha}\subseteq\bigcap_{\alpha \in J}A_{\alpha}$? Explain.
 \end{exercise}\hyperref[sol:8.14]{[Go to Solution]}
+
+\section{Sets That are Number Systems}
+
+In practice set theorists are most interested in the sets that have special properties and structures, such as $\N,\Z,\Q$. We are assuming that all these sets are ordered. To illustrate it through an example, let $A\subseteq \N,A\ne \varnothing$, then because $\N$ is ordered, $x_{0}\in A$ is going to be the smallest element in $A$. Similarly, $b\in\Z,A\subseteq \{ b,b+1,b+2,\dots \}$. This principle is often called \textbf{The Well-Orderning Principle (WOP)}.\newline
+\textbf{WOP} fails for $\R$.\newline
+A consequence of WOP is that any integer $a$ can be divided by a non-zero integer $b$, resulting in a quotient $q$ and a remainder $r$. This is called the \textbf{division algorithm}.
+\begin{fact}
+    (Division Algorithm) Given integers $a,b, b>0$, there is some unique integer $q,r$ for which $a=qb+r$ and $0\le r<b$. 
+\end{fact}
+
+The author of the textbook also explain how numbers can be understood in terms of sets. 
+$$
+0=\varnothing,1=\{ \varnothing \}=\{ 0 \},2=\{ \varnothing,\{ \varnothing \} \}=\{ 0,1 \},\dots
+$$
+In general, the natural number $n$ is the set $n=\{ 0,1,2,3,4\dots, n-1 \}$ of the $n$ numbers that come before it. 
+
+\section{Russell's Paradox}
+This is a very important paradox in set theory and a lot has been written on it. The gist is the following.
+$$
+A=\{ X:X \text{ is a set and } X\notin X \}.
+$$
+The idea here is to think of $A$ as the \emph{universe}. Then most sets will be members of it. Consider for example the set of integers $\Z$, we know that $Z\subseteq Z$ but $\Z\notin\Z$. The paradox arises from the question of whether $A$ is an element of itself. So, for $X\in A, X\notin X$. If we suppose that $X=A$, we must have that $A\in A,A\notin A$. Therefore, $A\in A\Rightarrow A\notin A$ or vice versa. This leads to a contradiction. Russsell's Paradox instigated a very careful examination of set theory and evaluation of what can and cannot be regarded as a set. Eventually, the $\mathrm{ZF}$ axioms were developed and agreed upon. 

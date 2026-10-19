@@ -723,7 +723,7 @@ $$
         \item $A-B^{\complement}=\{ 5,8 \}$
         \item $A^{\complement}-B^{\complement}=\{ 4,6 \}$
         \item $A^{\complement}\cap B=\{ 1,3,7 \}$
-        \item $(A^{\complement}-B)^{\complement}=\{ 0,1,2,3,4,6,7,9,10 \}$
+        \item ${(A^{\complement}-B)}^{\complement}=\{ 0,1,2,3,4,6,7,9,10 \}$
     \end{enumerate}
 \end{solution}
 
@@ -734,9 +734,9 @@ $$
         \item $A\cap A^{\complement}=\varnothing$
         \item $A\cup A^{\complement}=U$
         \item $A-A^{\complement}=A$
-        \item $(A\cup B)^{\complement}=\varnothing$
+        \item ${(A\cup B)}^{\complement}=\varnothing$
         \item $A^\complement\cap B^{\complement}=\varnothing$
-        \item $(A\cap B)^{\complement}=U$
+        \item ${(A\cap B)}^{\complement}=U$
         \item $A^{\complement}\times B=\{ (1,1),(1,3),(1,5),\dots \}=B^{2}$
     \end{enumerate}
 \end{solution}
@@ -908,8 +908,7 @@ $$
         \caption{$X^{\complement}\cap([-2,4]\times[-1,3])$}
     \end{subfigure}
 
-    \caption{Sketches for Exercise 6.4.}
-    \label{fig:ex_6_4}
+    \caption{Sketches for Exercise 6.4.}\label{fig:ex_6_4}
 \end{figure}
 \end{solution}
 
@@ -975,8 +974,7 @@ $$
         \caption{The complement $X^{\complement}$ ($r < 1 \cup r > 2$)}
     \end{subfigure}
 
-    \caption{Sketches for Exercise 6.5.}
-    \label{fig:ex_6_5}
+    \caption{Sketches for Exercise 6.5.}\label{fig:ex_6_5}
 \end{figure}
 \end{solution}
 
@@ -1046,8 +1044,7 @@ $$
         \caption{The complement $X^{\complement} = \{(x,y) \in \mathbb{R}^2 : y \ge x^2\}$}
     \end{subfigure}
 
-    \caption{Sketches for Exercise 6.6.}
-    \label{fig:ex_6_6}
+    \caption{Sketches for Exercise 6.6.}\label{fig:ex_6_6}
 \end{figure}
 \end{solution}
 \newpage
@@ -1079,38 +1076,145 @@ $$
 
 
 \begin{solution}\label{sol:8.3}\ref{ex:8.3}
-    
+    For each $n\in\N$, we let $A_n=\{ 0,1,2,3,4,\dots,n \}$. Let us first unpack what this means. Consider the following two interpretations: 
+    $$
+    A_0=\{ 0 \}, A_{1}=\{ 0,1 \},\dots \quad\quad A_1=\{ 0,1 \},A_2=\{ 0,1,2 \},\dots
+    $$
+    It is up to convention whether $\N=\{ 0,1,2,3,\dots \}$ or $\N=\{ 1,2,3,\dots \}$. Depending on the convention the answer might differ slightly. 
+    Case $1$: 
+    $$
+    (1)~ \bigcup_{i\in\N}A_i= \N\cup \{ 0 \}
+    $$
+    Case $2$: 
+    $$
+    (1)~ \bigcup_{i\in\N}A_i= \N.
+    $$
+    Similarly for the second subpoint. 
+    Case $1$: 
+    $$
+    (2)~ \bigcap_{i\in\N}A_i=\{ 0,1 \}
+    $$
+    and Case $2$:
+    $$
+    (2)~ \bigcap_{i\in\N}A_i=\{ 0 \}
+    $$
 \end{solution}
+
 \begin{solution}\label{sol:8.4}\ref{ex:8.4}
-    
+    Let each $n\in \N$ with $A_{n} = \{ -2n, 0, 2n \}$, then similarly to before, we have 
+    $$
+    A_0 = \{ -2(0), 0, 2(0) \} \quad\quad A_1=\{ -2(1), 0, 2(1) \}, A_2=\{ -2(2), 0, 2(2) \}
+    $$
+    So, 
+    $$
+    \bigcup_{i\in\N}A_{i} = \{ \dots,-6,-4,-2,0,2,4,6,\dots \}
+    $$
+    and 
+    $$
+    \bigcap_{i\in\N}A_{i} = \{ 0 \}
+    $$
+    Similarly to before, if we assume that $\N=\N - \{ 0 \}$, then we will start from $A_1$ but this exercise will not be affected by that convetion like the previous one.
 \end{solution}
+
+
 \begin{solution}\label{sol:8.5}\ref{ex:8.5}
     
+    $$
+    (1)~ \bigcup_{i\in\N}[i,i+1]=[0,\infty)
+    $$
+    Here we assume that $0\in\N$, if you choose to assume the contrary, then the interval would start with $1$ instead of $0$.
+    $$
+    (2)~\bigcap_{i\in\N}[i,i+1]=\varnothing
+    $$
+    Since there are no two sets with the same intervals. 
 \end{solution}
+
+
 \begin{solution}\label{sol:8.6}\ref{ex:8.6}
-    
+    $$
+    (1)~\bigcup_{i\in\N}[0,i+1]=[0,\infty)
+    $$
+    and 
+    $$
+    (2)~\bigcap_{i\in\N}[0,i+1]=\varnothing
+    $$
 \end{solution}
+
+
 \begin{solution}\label{sol:8.7}\ref{ex:8.7}
     
+    $$
+    (1)~\bigcup_{i\in\N}\R\times[i,i+1]=\R\times [0,\infty)
+    $$
+    Again, in the above, convention matters, it will be the differnece between $[1,\infty)$ and the answer provided above. 
+    $$
+    (2)~\bigcap_{i\in\N}\R\times[i,i+1]=\varnothing
+    $$
 \end{solution}
+
+
 \begin{solution}\label{sol:8.8}\ref{ex:8.8}
     
+    $$
+    (1)~\bigcup_{a\in\R}\{ a \}\times[0,1]=a \times [0,1]
+    $$
+    We know that $a\in\R$ means that $a$ is any real number such that $\sqrt2\times[0,1]$ for example. 
+    $$
+    (2)~\bigcap_{a\in\R}\{ a \}\times[0,1]=\varnothing
+    $$
 \end{solution}
+
+
 \begin{solution}\label{sol:8.9}\ref{ex:8.9}
     
+    $$
+    (1)~\bigcup_{X\in\powerset(\N)}X=\N
+    $$
+    The way to think about it is that because $X\in\powerset(\N)$, then $X$ can be any subset of the natural numbers. The union of those subsets would be the natural numbers. 
+    $$
+    (2)~\bigcap_{X\in\powerset(\N)}X=\varnothing
+    $$
+    Important here is to remember that the empty set is part of $\powerset(\N)$.
 \end{solution}
+
 \begin{solution}\label{sol:8.10}\ref{ex:8.10}
     
+    $$
+    (1)~\bigcup_{x\in[0,1]}[x,1]\times[0,x^{2}]=\R^{+}
+    $$
+    and 
+    $$
+    (2)~\bigcap_{x\in[0,1]}[x,1]\times[0,x^{2}]=\varnothing
+    $$
 \end{solution}
+
+
 \begin{solution}\label{sol:8.11}\ref{ex:8.11}
-    
+    Yes, this is always true. Informally speaking, the intersection of two sets is almost always smaller than their union. Consider the example: 
+    $$
+    \{ 1,2,3 \}\cup \{ 2,3,4 \}= \{ 1,2,3,4 \} \quad\quad \{ 1,2,3 \}\cap \{ 2,3,4 \}=\{ 2,3 \}.
+    $$
+    In the case when the intersection is empty and the two sets disjoint, then we know that the empty set is a subset of any set, so the statement still holds. 
 \end{solution}
+
 \begin{solution}\label{sol:8.12}\ref{ex:8.12}
+    Now we consider the relationship between $\bigcap_{\alpha\in I}A_{\alpha}=\bigcup_{\alpha\in I}A_{\alpha}$. Clearly if they are equal the first thing to consider would be that two sets are equal, meaning 
+    $$
+    \{ 1,2,3 \}\cap \{ 1,2,3 \}=\{ 1,2,3 \} \quad\quad \{ 1,2,3 \}\cup \{ 1,2,3 \}=\{ 1,2,3 \}
+    $$
     
 \end{solution}
+
 \begin{solution}\label{sol:8.13}\ref{ex:8.13}
+    If $J\ne\varnothing, J\subseteq I$, then is it true that $\bigcup_{\alpha\in J}A_{\alpha}\subseteq \bigcup_{\alpha\in I}A_{\alpha}$? Let us break down the statement. First, suppose that $J=\{ 1,2,3 \}$ and $I=\{ 1,2,3,4 \}$, then the statement would be true. Intuitively, the idea is that $J$ can be at least as large as $I$. If we think about the definition of big union 
+    $$
+    \bigcup_{\alpha\in J}A_\alpha=\{ x: \exists x\in A_\alpha(\alpha\in J) \},
+    $$
+    so, the requirement is that at \emph{at least one} $x$ that is a member of $A_{\alpha}$, then since $J\subseteq I$, it follows by definition of subsets that the equivalence holds. 
     
+    Now, let's consider the second one. The definition of big intersection is $\forall x\in A_{\alpha}(\alpha \in J)$ to be true. This however is not necessitated by the definition of subets. So it could be true, but it \emph{does not} hold in general. 
 \end{solution}
+
 \begin{solution}\label{sol:8.14}\ref{ex:8.14}
-    
+    If $J\ne\varnothing,J\subseteq I$, then $\bigcap_{\alpha\in I}A_{\alpha}\subseteq \bigcap_{\alpha \in J}A_{\alpha}$. Now, let some arbitrary element $x\in \bigcap_{\alpha\in I}A_{\alpha}$, then $\forall \alpha \in I, x\in A_{\alpha}$. Similar to before, if $J\subseteq I$, then $J$ is at most as big as $I$. Since, all $x\in A_{\alpha}$ for an arbitrary $x$, then it follows that $\forall \alpha \in J, x \in A_{\alpha}$. Thus, $x\in\bigcap_{\alpha\in J}A_{\alpha}.$
 \end{solution}
