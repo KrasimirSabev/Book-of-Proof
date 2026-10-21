@@ -1,0 +1,169 @@
+\section{The Cartesian Product}
+Think of the Cartesian product as a type of multiplication. 
+$$
+A \times B 
+$$
+In order to understand products better we will define an \emph{ordered pair}.
+\begin{defn}
+An ordered pair is a list of the form $x,y$ of two things, namely $x$ and $y$, enclosed in parenthesis and separated by a comma.\footnote{Additionally, one can use the Kuratowski ordered pair definition, i.e. $\{\{x\}, \{x,y\}\}=(x,y)$. However, the one given above, even though slightly cryptic is easier to grasp for someone who has never encountered sets before.}
+\end{defn}
+
+There are many ordered pairs, consider the ordered pair $(2,4)$. Now, if we swap the numbers around, that would be an ordered pair as well, i.e. $(4,2)$. However, these two pairs are not identical, meaning 
+$$
+(2,4) \ne (4,2).
+$$
+Ordered pairs can be used to describe points on a plane (as it is done in Calculus and Linear Algebra for example). Similarly to our previous talk about sets, ordered pairs need not be \emph{just} numbers, they can be letters as well. 
+\begin{example}
+    The pair $(\{2,3\}, \{3,4\})$ can be an ordered pair of two sets, say $A,B$, then $(\{2,3\},\{3,4\})=(A,B)$;\\
+    $(\alpha,\beta)$ can also be a pair;
+    finally, $((2,3),(3,4))$ can be an ordered pair of an ordered pair. 
+\end{example}
+So, the following definition of Cartesian Products is important: 
+\begin{defn}
+    The Cartesian Product of two sets $A,B$ is a set, denoted by 
+    $$
+    A\times B
+    $$
+    and defined as 
+    $$
+    A\times B = \{(a,b): a\in A, b\in B\}.
+    $$
+\end{defn}
+
+The following is a more visual example of how ordered pairs are formed.
+\begin{example}
+    Let $A=\{k,l,m\}, B=\{o,p\}$ for $A,B$ some sets, then the product of A with B is 
+    $$
+    A\times B = \{(k,o),(k,p),(l,o),(l,p),(m,o),(m,p)\}.
+    $$
+    Schematically, one can think of these pairs in terms of rows and columns or in terms of a corrdinate system where $A$ is the $x$-axis and $B$ is the $y$-axis. 
+\end{example}
+The following is a fact: 
+\begin{fact}
+    If $A,B$ are finite sets, then $\lvert A\times B \rvert = \lvert A \rvert\cdot \lvert B \rvert$.
+\end{fact}
+
+\begin{example}
+    Let $A=\{1,2,3,4,5,6\}$ and suppose these are dice values. The Cartesian Product of A with itself is 
+    $$
+    A\times A = A^{2}.
+    $$
+The product of $A$ with itself will be a finite set of ordered pairs. 
+$$
+\lvert A\times A \rvert = \lvert A \rvert \cdot \lvert A \rvert= 6\cdot 6 = 36.
+$$
+Think of the product as rolling a dice twice an recording the outcome, where the first roll corresponds to the first result and the second to the second result. 
+
+\begin{example}
+Another few very useful examples are the sets: 
+$$
+\begin{aligned}
+\R \times \R &= \{(x,y): x,y \in \R\}\\
+\R \times \N &= \{(x,y): x\in \R, y\in \N\}\\
+\N^{2} &= \{(x,y): x,y\in \N\}. 
+\end{aligned}
+$$
+\end{example}
+The first example is best described as a coordinate system or an $xy$-plane. The second example is simply all points on the plane, whose second coordinate is a natural number. The third example, is best described as the first quadrant of the $xy$-plane, where every $x,y$ are natural numbers. More formally, the last example is called the \emph{lattice points} of the first quadrant. 
+\end{example}
+
+It is possible for one factor of a Cartesian product to be a Cartesian Product itself. Suppose the following: 
+$$
+\R \times (\N \times \Z) =\{x, (y,z): x\in \R, (y,z)\in \N\times \Z\}.
+$$
+There is a different way to think about these pairs. They are called \emph{ordered triples}. 
+The brackets are optional in the above example, one can also write 
+$$
+\R \times \N \times Z = \{(x,y,z): x\in \R, y\in \N, z\in Z\}.
+$$
+\emph{In general} we can define 
+$$
+A_{1}\times A_2\times \cdots \times A_n =\{(x_1,x_2,\dots,x_n): x_1\in A_1,x_2\in A_2,\dots,x_n\in A_n\},
+$$
+or more succinctly, 
+$$
+A_{1}\times A_2 \times \cdots \times A_n =\{(x_1,x_2,\dots,x_n): x_i\in A_i\} \text{ for } i=\{1,2,3,\dots,n\}
+$$
+
+\begin{example}
+    Represent the two sides of a coin by the set $S=\{ H,T \}$, the possible outcomes of tossing the coin seven times in a row can be described as: 
+    \begin{solution}
+        This is the representation
+        $$
+        S^7=\{(x_1,x_2,\dots,x_7): x_1,x_2,\dots,x_7 \in S\}.
+        $$
+        Now to find the possible outcomes: 
+        $$
+        \lvert S^7 \rvert = 2 \cdot 2 \cdot \dots 7= 128.
+        $$
+    \end{solution}
+\end{example}
+I believe the following to be clear but still worth noting. Notice that the cardinality of the product of $S$ with itself seven times is written inside the $\lvert  \rvert$ and not outside. This might seem like a silly thing to say, however syntax is very important. 
+
+\subsection{Exercises from Section 2}
+\begin{exercise}\label{ex:2.1}
+    Write out the indicated sets by listing their elements between braces. 
+    \begin{enumerate}
+        \item Suppose $A=\{ 1,2,3,4 \},B=\{ a,c \}$. 
+        $$
+        \begin{aligned}
+            &(a) A\times B \\
+            &(b) B\times A\\
+            &(c) A\times A \\
+            &(d) B\times B\\
+            &(e) \varnothing \times B \\
+            &(f) (A\times B)\times B\\
+            &(g) A\times (B\times B)\\
+            &(h) B^3
+        \end{aligned}
+        $$
+        \item Suppose $A=\{ \pi,e,0 \},B=\{ 0,1 \}$.
+        $$
+        \begin{aligned}
+            &(a) A\times B \\
+            &(b) B\times A \\
+            &(c) A^2 \\
+            &(d) B^2\\
+            &(e) A\times\varnothing \\
+            &(f) (A\times B)\times B \\
+            &(g) A\times(B\times B) \\
+            &(h) A\times B\times B.
+        \end{aligned}
+        $$
+        \item 
+        $
+        \{ x\in\R: x^2=2 \}\times \{ a,c,e \}.
+        $
+        \item 
+        $
+        \{ n\in\Z:2<n<5 \}\times \{ n\in\Z:\lvert n \rvert=5 \}.
+        $
+        \item 
+        $
+        \{ x\in\R:x^2=2 \}\times \{ x\in\R:\lvert x \rvert=2 \}.
+        $
+        \item 
+        $
+        \{ x\in\R:x^2=x \}\times \{ x\in\N:x^2=x \}. 
+        $
+        \item 
+        $
+        \{ \varnothing \}\times \{ 0,\varnothing \}\times \{ 0,1 \}.
+        $
+        \item $\{ 0,1 \}^{4}$.
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.1]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.2}
+    Sketch these Cartesian Products on the $xy$-plane (or in $\R^3$ for the last two).
+    $$
+    \begin{aligned}
+        (9) \{ 1,2,3 \}\times \{ -1,0,1 \} &\quad\quad (15) \{ 1 \}\times [0,1]\\
+        (10) \{ -1,0,1 \}\times \{ 1,2,3 \} &\quad\quad (16) [0,1]\times \{ 1 \}\\
+        (11) [0,1]\times[0,1] &\quad\quad (17) \N\times\Z\\
+        (12) [-1,1]\times [1,2] &\quad\quad (18) \Z^2\\
+        (13) \{ 1,1.5,2 \}\times[1,2] &\quad\quad (19) [0,1]^3\\
+        (14) [1,2]\times \{ 1,1.5,2 \} &\quad\quad \{ (x,y)\in\R^2:x^2+y^2\le 1 \}\times[0,1]
+    \end{aligned}
+    $$
+\end{exercise}\hyperref[sol:2.2]{[Go to Solution]}

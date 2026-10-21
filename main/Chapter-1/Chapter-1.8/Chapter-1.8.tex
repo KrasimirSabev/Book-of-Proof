@@ -1,0 +1,165 @@
+\section{Indexed Sets}
+When a mathematical problem involves a lot of sets (which are almost all advanced problems), it is convenient to keep track of all of them by using \emph{subscripts or indices.}
+
+For example, let $A,B,C$ be some sets, instead we can write $A_{1},A_{2},A_{3}$, and those would be the \emph{indexed sets}.
+
+Moreover, we can add the union and intersection operations and combine multiple sets. Consider the following rough guidelines. 
+
+Let $A_{1},A_{2},\dots,A_{n}$ be sets, then $A_1\cup A_2 \cup\cdots\cup A_n$ forms their union. We can say that the union consists of \emph{at least one} of the sets $A_i$. The symmetric holds for intersections, i.e. $A_1\cap A_2\cap\cdots\cap A_n$ forms the intersection that consists of eveyrthing that is common among \emph{all} the sets $A_i$. 
+The following definitions follo: 
+\begin{defn}
+    Let $A_{1},A_{2},\dots,A_{n}$ be sets, then:
+    $$
+    \begin{aligned}
+        &A_1\cup A_2 \cup \cdots \cup A_n = \{ x:x\in A_i \text{ for at least one set } A_i, \text{ for } 1\le i \le n \}\\
+        &A_1\cap A_2 \cap \cdots \cap A_n =\{ x:x\in A_i \text{ for all sets } A_i, \text{ for } 1\le i \le n \}.
+    \end{aligned}
+    $$
+\end{defn}
+
+If the number $n$ is very large, then expression can get a bit messy. So we use the following notation similar to $\sum$-notation. 
+$$
+\begin{aligned}
+    &\bigcup^{n}_{i=1}A_{i}=A_1\cup A_2\cup\cdots\cup A_n\\
+    &\bigcap^{n}_{i=1}A_i=A_1\cap A_2\cap\cdots\cap A_n.
+\end{aligned}
+$$
+\begin{example}
+    Suppose $A_1=\{ 0,2,5 \},A_2=\{ 1,2,5 \},A_3=\{ 2,5,7 \}$. Then: 
+    $$
+    \begin{aligned}
+        &\bigcup^{3}_{i=1}A_i= A_1\cup A_2 \cup A_3=\{ 0,1,2,5,7 \}\\
+        &\bigcap^{3}_{i=1}A_i= A_1\cap A_2 \cap A_3 = \{ 2,5 \}.
+    \end{aligned}
+    $$
+\end{example}
+
+We can even use this notation when the list of sets $A_i$ is infinite. 
+$$
+\begin{aligned}
+    &\bigcup^{\infty}_{i=1}A_i=A_1\cup A_2\cup\cdots = \{ x:\exists i\ge 1,x\in A_i \}\\
+    &\bigcap^{\infty}_{i=1}A_i=A_1\cap A_2 \cap\cdots = \{ x:\forall i\ge1,x\in A_i \}.
+\end{aligned}
+$$
+
+\begin{example}
+    Let $A_1=\{ -1,0,1 \},A_2=\{ -2,0,2 \},A_3=\{ -3,0,3 \},\dots,A_i=\{ -i,0,i \}.$ Observe that $\bigcup^{\infty}_{i=1}A_i=\Z, \bigcap^{\infty}_{i=1}A_i=\{ 0 \}$.
+\end{example}
+
+A useful \emph{heuristic} might be the following: 
+$$
+\bigcup^{3}_{i=1}=\bigcup_{i\in\{ 1,2,3 \}}A_i
+$$
+The idea here is that the union of the sets $A_i$, for $i=1,2,3$ is the same as the intersection of $A_i$ for $i$ a member of the set $\{ 1,2,3 \}$. Similarly, 
+$$
+\begin{aligned}
+    &\bigcup^{3}_{i=1}A_i=\bigcap_{i\in \{ 1,2,3 \}}A_i\\
+    &\bigcup^{\infty}_{i=1}A_i=\bigcup_{i\in\N}A_i\\
+    &\bigcap^{\infty}_{i=1}A_i=\bigcap_{i\in\N}A_i.
+\end{aligned}
+$$
+
+In general, the way this works is that we have a collection of sets $A_i$ and $i\in I$ for $I$ an index set. Furthermore, we can subscript anything we want really, so the following definition is more general than the previous one and might be helpful. 
+\begin{defn}
+    If $A_{\alpha}$ is a set for every $\alpha$ in some index set $I\ne 0$, then: 
+    $$
+    \begin{aligned}
+        &\bigcup_{\alpha\in I}A_{\alpha}=\{ x:\exists \alpha\in I,x\in A_{\alpha} \}\\
+        &\bigcap_{\alpha \in I}A_{\alpha}=\{ x:\forall \alpha \in I, x\in A_{\alpha} \}.
+    \end{aligned}
+    $$
+\end{defn}
+\subsection{Exercises for Section 8}
+
+\begin{exercise}\label{ex:8.1}
+    Suppose $A_{1} = \{ a,b,d,e,g,f \}, A_{2}=\{ a,b,c,d \}, A_{3}=\{ b,d,a \},A_{4} = \{ a,b,h \}$. Find:
+    $$
+       (1)~ \bigcup^{4}_{i=1}A_{i}=\dots\quad\quad 
+        (2)~ \bigcap^{4}_{i=1}A_{i}=\dots
+    $$
+\end{exercise}\hyperref[sol:8.1]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.2}
+    Suppose $A_{1}=\{ 0,2,4,8,10,\dots,24 \}, A_{2}=\{ 0,3,6,9,\dots,24 \}, A_{3}=\{ 0,4,8,12,\dots,24 \}$. Find: 
+    $$
+    (1)~ \bigcup^{3}_{i=1}A_{i}=\dots \quad\quad (2)~ \bigcap^{3}_{i=1}A_{i}=\dots
+    $$
+\end{exercise}\hyperref[sol:8.2]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.3}
+    For each $n\in\N$, let $A_{n} = \{ 0,1,2,3,\dots,n \}$. Find: 
+    $$
+    (1)~\bigcup_{i\in\N}A_i=\dots \quad\quad (2)~ \bigcap_{i\in\N}A_{i}=\dots
+    $$
+\end{exercise}\hyperref[sol:8.3]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.4}
+    For each $n\in\N$, let $A_{n}=\{ -2n,0,2n \}$. Then find: 
+    $$
+        (1)~\bigcup_{i\in\N}A_{i}\quad\quad
+        (2)~\bigcap_{i\in\N} A_{i}
+    $$
+\end{exercise}\hyperref[sol:8.4]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.5}
+    Find: 
+    $$
+    (1)~\bigcup_{i\in\N}[i,i+1]\quad \quad
+    (2)~\bigcap_{i\in\N}[i,i+1]
+    $$
+\end{exercise}\hyperref[sol:8.5]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.6}
+
+$$
+(1)~ \bigcup_{i\in\N}[0,i+1]\quad\quad (2)~\bigcap_{i\in\N}[0,i+1]
+$$
+\end{exercise}\hyperref[sol:8.6]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.7}
+    
+    $$
+    (1)~\bigcup_{i\in\N}\R\times[i,i+1]\quad \quad \bigcap_{i\in\N}\R\times[i,i+1]
+    $$
+    
+\end{exercise}\hyperref[sol:8.7]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.8}
+    
+    $$
+    \bigcup_{a\in\R}\{ a \}\times[0,1]\quad\quad \bigcap_{a\in\R}\{ a \}\times[0,1]
+    $$
+    
+\end{exercise}\hyperref[sol:8.8]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.9}
+    $$
+    (1)~ \bigcup_{X\in\powerset(\N)}X\quad \quad 
+    (2)~ \bigcap_{X\in\powerset(\N)}X
+    $$
+\end{exercise}\hyperref[sol:8.9]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.10}
+    
+    $$
+    (1)~ \bigcup_{x\in[0,1]}[x,1]\times[0,x^{2}]\quad\quad
+    (2)~ \bigcap_{x\in[0,1]}[x,1]\times[0,x^{2}]
+    $$
+    
+\end{exercise}\hyperref[sol:8.10]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.11}
+    Is $\bigcap_{\alpha\in I}A_{\alpha}\subseteq\bigcup_{\alpha\in I}A_{\alpha}$ always true for any collection of sets $A_{\alpha}$ with index set I?
+\end{exercise}\hyperref[sol:8.11]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.12}
+    If $\bigcap_{\alpha\in I}A_{\alpha}=\bigcup_{\alpha\in I}A_{\alpha}$, what do you think can be said about the relationship between the sets $A_{\alpha}$?
+\end{exercise}\hyperref[sol:8.12]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.13}
+    If $J\ne \varnothing$ and $J\subseteq I$, does it follow that $\bigcup_{\alpha\in J}A_{\alpha}\subseteq\bigcup_{\alpha \in I}A_{\alpha}$? What about the respective intersections?
+\end{exercise}\hyperref[sol:8.13]{[Go to Solution]}
+
+\begin{exercise}\label{ex:8.14}
+    If $J\ne\varnothing,J\subseteq I$, does it follow that $\bigcap_{\alpha\in I}A_{\alpha}\subseteq\bigcap_{\alpha \in J}A_{\alpha}$? Explain.
+\end{exercise}\hyperref[sol:8.14]{[Go to Solution]}

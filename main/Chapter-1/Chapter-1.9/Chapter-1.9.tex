@@ -1,0 +1,15 @@
+
+\section{Sets That are Number Systems}
+
+In practice set theorists are most interested in the sets that have special properties and structures, such as $\N,\Z,\Q$. We are assuming that all these sets are ordered. To illustrate it through an example, let $A\subseteq \N,A\ne \varnothing$, then because $\N$ is ordered, $x_{0}\in A$ is going to be the smallest element in $A$. Similarly, $b\in\Z,A\subseteq \{ b,b+1,b+2,\dots \}$. This principle is often called \textbf{The Well-Orderning Principle (WOP)}.\newline
+\textbf{WOP} fails for $\R$ and in general for $\Z,\Q$.\newline
+A consequence of WOP is that any integer $a$ can be divided by a non-zero integer $b$, resulting in a quotient $q$ and a remainder $r$. This is called the \textbf{division algorithm}.
+\begin{fact}
+    (Division Algorithm) Given integers $a,b, b>0$, there is some unique integer $q,r$ for which $a=qb+r$ and $0\le r<b$. 
+\end{fact}
+
+The author of the textbook also explain how numbers can be understood in terms of sets. 
+$$
+0=\varnothing,1=\{ \varnothing \}=\{ 0 \},2=\{ \varnothing,\{ \varnothing \} \}=\{ 0,1 \},\dots
+$$
+In general, the natural number $n$ is the set $n=\{ 0,1,2,3,4\dots, n-1 \}$ of the $n$ numbers that come before it. 

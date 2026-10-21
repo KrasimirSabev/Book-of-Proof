@@ -1,0 +1,172 @@
+
+\section{Solutions to Exercises from Section 8}
+
+\begin{solution}\label{sol:8.1}\ref{ex:8.1}
+    Let $A_{1}=\{ a,b,d,e,g,f \},A_{2}=\{ a,b,c,d \},A_{3}=\{ b,d,a \},A_{4}=\{ a,b,h \}$. Then,
+    $$
+    (1)~ \bigcup^{4}_{i=1}A_{i}= A_{1}\cup A_{2} \cup A_{3} \cup A_{4}=\{ a,b,c,d,e,f,g,h \}
+    $$
+    and 
+    $$
+    (2)~ \bigcap^{4}_{i=1}A_{i}=A_1 \cap A_2 \cap A_3 \cap A_4 =\{ a,b \}.
+    $$
+\end{solution}
+
+
+\begin{solution}\label{sol:8.2}\ref{ex:8.2}
+    Let $A_1= \{ 0,2,4,\dots,24 \},A_2=\{ 0,3,6,\dots,24 \},A_3=\{ 0,4,8,\dots,24 \}$. Then, 
+    $$
+    (1)~ \bigcup^{3}_{i=1}A_i=\{ 0,2,3,4,6,9,\dots,24 \}
+    $$
+    and 
+    $$
+    (2)~\bigcap^{3}_{i=1}A_i=\{ 0,12,14 \}.
+    $$
+\end{solution}
+
+
+\begin{solution}\label{sol:8.3}\ref{ex:8.3}
+    For each $n\in\N$, we let $A_n=\{ 0,1,2,3,4,\dots,n \}$. Let us first unpack what this means. Consider the following two interpretations: 
+    $$
+    A_0=\{ 0 \}, A_{1}=\{ 0,1 \},\dots \quad\quad A_1=\{ 0,1 \},A_2=\{ 0,1,2 \},\dots
+    $$
+    It is up to convention whether $\N=\{ 0,1,2,3,\dots \}$ or $\N=\{ 1,2,3,\dots \}$. Depending on the convention the answer might differ slightly. 
+    Case $1$: 
+    $$
+    (1)~ \bigcup_{i\in\N}A_i= \N
+    $$
+    Case $2$: 
+    $$
+    (1)~ \bigcup_{i\in\N}A_i= \N\cup \{ 0 \}.
+    $$
+    Similarly for the second subpoint. 
+    Case $1$: 
+    $$
+    (2)~ \bigcap_{i\in\N}A_i=\{ 0,1 \}
+    $$
+    and Case $2$:
+    $$
+    (2)~ \bigcap_{i\in\N}A_i=\{ 0 \}
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:8.4}\ref{ex:8.4}
+    Let each $n\in \N$ with $A_{n} = \{ -2n, 0, 2n \}$, then similarly to before, we have 
+    $$
+    A_0 = \{ -2(0), 0, 2(0) \} \quad\quad A_1=\{ -2(1), 0, 2(1) \}, A_2=\{ -2(2), 0, 2(2) \}
+    $$
+    So, 
+    $$
+    \bigcup_{i\in\N}A_{i} = \{ \dots,-6,-4,-2,0,2,4,6,\dots \}
+    $$
+    and 
+    $$
+    \bigcap_{i\in\N}A_{i} = \{ 0 \}
+    $$
+    Similarly to before, if we assume that $\N=\N - \{ 0 \}$, then we will start from $A_1$ but this exercise will not be affected by that convetion like the previous one.
+\end{solution}
+
+
+\begin{solution}\label{sol:8.5}\ref{ex:8.5}
+    
+    $$
+    (1)~ \bigcup_{i\in\N}[i,i+1]=[0,\infty)
+    $$
+    Here we assume that $0\in\N$, if you choose to assume the contrary, then the interval would start with $1$ instead of $0$.
+    $$
+    (2)~\bigcap_{i\in\N}[i,i+1]=\varnothing
+    $$
+    Since some pairs of intervals are disjoint ($[0,1]\cap[2,3]$). 
+\end{solution}
+
+
+\begin{solution}\label{sol:8.6}\ref{ex:8.6}
+    $$
+    (1)~\bigcup_{i\in\N}[0,i+1]=[0,\infty)
+    $$
+    and 
+    $$
+    (2)~\bigcap_{i\in\N}[0,i+1]=[0,1] \text{ or } [0,2] \text{ depending on whether we include } 0\in\N
+    $$
+\end{solution}
+
+
+\begin{solution}\label{sol:8.7}\ref{ex:8.7}
+    
+    $$
+    (1)~\bigcup_{i\in\N}\R\times[i,i+1]=\R\times [0,\infty)
+    $$
+    Again, in the above, convention matters, it will be the differnece between $[1,\infty)$ and the answer provided above. 
+    $$
+    (2)~\bigcap_{i\in\N}\R\times[i,i+1]=\varnothing
+    $$
+\end{solution}
+
+
+\begin{solution}\label{sol:8.8}\ref{ex:8.8}
+    
+    $$
+    (1)~\bigcup_{a\in\R}\{ a \}\times[0,1]=\R \times [0,1]
+    $$
+    We know that $a\in\R$ means that $a$ is any real number such that $\sqrt2\times[0,1]$ for example. 
+    $$
+    (2)~\bigcap_{a\in\R}\{ a \}\times[0,1]=\varnothing
+    $$
+\end{solution}
+
+
+\begin{solution}\label{sol:8.9}\ref{ex:8.9}
+    
+    $$
+    (1)~\bigcup_{X\in\powerset(\N)}X=\N
+    $$
+    The way to think about it is that because $X\in\powerset(\N)$, then $X$ can be any subset of the natural numbers. The union of those subsets would be the natural numbers. 
+    $$
+    (2)~\bigcap_{X\in\powerset(\N)}X=\varnothing
+    $$
+    Important here is to remember that the empty set is part of $\powerset(\N)$.
+\end{solution}
+
+\begin{solution}\label{sol:8.10}\ref{ex:8.10}
+    
+    $$
+    (1)~\bigcup_{x\in[0,1]}[x,1]\times[0,x^{2}]=\{ (u,v):0\le u\le 1, 0\le v \le u^{2} \}
+    $$
+    and 
+    $$
+    (2)~\bigcap_{x\in[0,1]}[x,1]\times[0,x^{2}]=\{ (1,0) \}
+    $$
+\end{solution}
+
+
+\begin{solution}\label{sol:8.11}\ref{ex:8.11}
+    Yes, this is always true. Informally speaking, the intersection of two sets is almost always smaller than their union. Consider the example: 
+    $$
+    \{ 1,2,3 \}\cup \{ 2,3,4 \}= \{ 1,2,3,4 \} \quad\quad \{ 1,2,3 \}\cap \{ 2,3,4 \}=\{ 2,3 \}.
+    $$
+    In the case when the intersection is empty and the two sets disjoint, then we know that the empty set is a subset of any set, so the statement still holds. 
+
+    For a more formal proof, let $\alpha\in I$, then suppose for some $x\in\alpha_{0}$. Since, $x\in\alpha_{0}$ and $\alpha\in I$, then $x\in A_{\alpha_{0}}$. Therefore, $x\in\bigcup_{\alpha\in I}A_{\alpha}$.
+\end{solution}
+
+\begin{solution}\label{sol:8.12}\ref{ex:8.12}
+    Now we consider the relationship between $\bigcap_{\alpha\in I}A_{\alpha}=\bigcup_{\alpha\in I}A_{\alpha}$. Clearly if they are equal the first thing to consider would be that two sets are equal, meaning 
+    $$
+    \{ 1,2,3 \}\cap \{ 1,2,3 \}=\{ 1,2,3 \} \quad\quad \{ 1,2,3 \}\cup \{ 1,2,3 \}=\{ 1,2,3 \}
+    $$
+    In other words, that all $A_{\alpha}$ are equal. 
+\end{solution}
+
+\begin{solution}\label{sol:8.13}\ref{ex:8.13}
+    If $J\ne\varnothing, J\subseteq I$, then is it true that $\bigcup_{\alpha\in J}A_{\alpha}\subseteq \bigcup_{\alpha\in I}A_{\alpha}$? Let us break down the statement. First, suppose that $J=\{ 1,2,3 \}$ and $I=\{ 1,2,3,4 \}$, then the statement would be true. Intuitively, the idea is that $J$ can be at most as large as $I$. If we think about the definition of big union 
+    $$
+    \bigcup_{\alpha\in J}A_\alpha=\{ x: \exists \alpha \in I, x\in A_\alpha \},
+    $$
+    so, the requirement is that at \emph{at least one} $x$ that is a member of $A_{\alpha}$, then since $J\subseteq I$, it follows by definition of subsets that the equivalence holds. 
+    
+    Now, let's consider the second one. The definition of big intersection is $\forall \alpha \in I, x\in A_{\alpha}$ to be true. This however is not necessitated by the definition of subets. So it could be true, but it \emph{does not} hold in general. 
+\end{solution}
+
+\begin{solution}\label{sol:8.14}\ref{ex:8.14}
+    If $J\ne\varnothing,J\subseteq I$, then $\bigcap_{\alpha\in I}A_{\alpha}\subseteq \bigcap_{\alpha \in J}A_{\alpha}$. Now, let some arbitrary element $x\in \bigcap_{\alpha\in I}A_{\alpha}$, then $\forall \alpha \in I, x\in A_{\alpha}$. Similar to before, if $J\subseteq I$, then $J$ is at most as big as $I$. Since, all $x\in A_{\alpha}$ for an arbitrary $x$, then it follows that $\forall \alpha \in J, x \in A_{\alpha}$. Thus, $x\in\bigcap_{\alpha\in J}A_{\alpha}$.
+\end{solution}

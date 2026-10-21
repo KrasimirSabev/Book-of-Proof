@@ -1,0 +1,120 @@
+\section{Introduction to Sets}
+
+All of mathematics can be described with sets. Set theory is \emph{a} perfectly suitable language to express and describe all types of mathematical structures. 
+
+Think of a \emph{set} as a collection of things. The things are called \emph{elements} of the set. It's somewhat worth noting here that we're only concerned with sets that express mathematical entities like functions, numbers, points, etc.
+Set construction: $\{ 2, 3, 4, 5 \}$ is a set which has $4$ elements. Some sets have infinitely many elements, \emph{not all} sets are finite.
+
+We say that two sets are \emph{equal} if they contain exactly the same elements. So: 
+	$\{ 2,3,4,5 \}=\{ 2, 4,3,5 \}$ but $\{ 2,3,4,5 \}\neq\{ 2,4,6,8 \}$. 
+
+To express that an element is \emph{member} of a set, we write $2\in A$, where $A$ is a set containing $2$ as an element. 
+Some sets are very important and we reserve special symbols for them, like: 
+$$
+\mathbb{N,Z,R,Q,C}
+$$  
+
+Sets don't have to contain only numbers, for example $B=\{ T,F \}$ or $C=\{ a,b,c,d,e \}$, or $D=\{ (0,0), (1,0), (0,1), (1,1) \}$. A set can have \emph{other sets as elements}: 
+$$
+K=\{1, \{ 2,3 \}, \{ 2,4 \}  \}
+$$
+It's really important to note here that $K$ has $3$ elements. $1, \{ 2, 3 \}, \{ 2,4 \} \in K$ but $2, 3,4 \notin K$.
+
+If a set $X$ is finite, we say that $X$'s \emph{cardinality} is the number of elements it has, and this number is denoted by $|X|$. 
+An example of a special set is $\varnothing$. It is called the empty set and it enjoys the unique status of having no members and thus $|\varnothing|=0$. 
+
+We have special \emph{set builder notation} to describe sets that are too large or too complex to list between braces. Consider the infinite set of even integers $E=\{ \dots,-4,-2,0,2,4,6 \dots \}$. We can instead write 
+$$
+E=\{ 2n|n\in\mathbb{Z} \}.
+$$
+We read it `the set of all things of form' $2n$, $|$ `such that', $n$ `is a member of' the set of integers. 
+The following generalised structure follows for set-builder notation: 
+$$X=\{ \mathrm{expression}: \mathrm{rule} \};$$
+where the elements of $X$ are understood to be \emph{all values of expression} that are specified by the \emph{rule}. 
+
+\begin{example}
+    
+$$
+\begin{aligned}
+1.~ \{ n:n~\mathrm{is~prime} \} = \{ 2,3,5,7,11,13,17\cdots \}\\
+2.~ \{ n\in\mathbb{N}: n\mathrm{~is~prime} \} = \{ 2,3,5,7,11,13,17,\dots \}\\
+3.~ \{ x\in\mathbb{R}: x^2-2=0 \} = \{ \sqrt2,-\sqrt2 \}\\
+4.~ \{ x\in\mathbb{Z}:x^2-2=0 \} = \varnothing\\
+5.~ \{ x\in\mathbb{Z}: |2x|<4 \} = \{ -1,0,1 \}
+\end{aligned}
+$$
+\end{example}
+
+\begin{example}
+Describe the set $A=\{ 7a+3b: a,b\in\mathbb{Z} \}$. 
+\begin{solution}
+The set $A$ is equivalent to the expression $7a+3b$, where the rule for finding $a,b$ is that they are members of the set of integers. Consider which integers. Let $n$ be any integer, then $n=7n+3(-2n)$, such that $n=a$ and $b=-2n$. So, $n\in A$. It follows that $A$ contains only integers, and furthermore, \emph{every integer is an element of} $A$. So $A=\mathbb{Z}$.    
+\end{solution}  
+\end{example}
+
+
+\emph{Important:} Set-builder notation for $\mathbb{Q}$: 
+$$
+\mathbb{Q} = \{ x: x = \frac {m}{n} \mathrm{~where~}m,n\in\mathbb{Z}\land n\neq 0 \}
+$$
+
+\subsection{Exercises from Section 1}
+\begin{exercise}\label{ex:1.1}
+    Write each of the following sets by listing their elements between braces. 
+    $$
+    \begin{aligned}
+    1. \{ 5x-1:x\in\Z \} &\quad\quad 9. \{ x\in\R:\sin\pi x=0 \}\\
+    2. \{ 3x+2:x\in\Z \} &\quad\quad 10. \{ x\in\R:\cos x=1 \}\\
+    3. \{ x\in\Z:-2\le x\le 7 \} &\quad\quad 11. \{ x\in \Z:\lvert x \rvert < 5 \}\\
+    4. \{ x\in \N: -2 < x \le 7\} &\quad\quad 12. \{ x\in\Z: \lvert 2x \rvert<5 \}\\
+    5. \{ x\in\R:x^2=3 \} &\quad\quad 13. \{ x\in\Z:\lvert 6x \rvert < 5 \}\\
+    6. \{ x\in\R:x^2=9 \} &\quad\quad 14. \{ 5x:x\in\Z,\lvert 2x \rvert\le 8 \}\\
+    7. \{ x\in\R:x^2+5x=-6 \} &\quad\quad 15. \{ 5a+2b:a,b\in\Z \}\\
+    8. \{ x\in\R:x^3+5x^2=-6x \} &\quad\quad 16. \{ 6a+2b:a,b\in\Z \}.
+    \end{aligned}
+    $$
+    \hyperref[sol:1.1]{[Go to Solution]}
+\end{exercise}
+
+\begin{exercise}\label{ex:1.2}
+    Write each of the following sets in set-builder notation.
+    $$
+    \begin{aligned}
+    17. \{ 2,4,8,16,32,64,\dots \} &\quad\quad 23. \{ 3,4,5,6,7,8 \}\\
+    18. \{ 0,4,16,36,64,100,\dots \} &\quad\quad 24. \{ -4,-3,-2,-1,0,1,2 \}\\
+    19. \{ \dots,-6,-3,0,3,6,9,12,15 \} &\quad\quad 25. \{ \dots,\frac{1}{8},\frac{1}{4},\frac{1}{2},1,2,4,8,\dots \}\\
+    20. \{ \dots,-8,-3,2,7,12,17,\dots \} &\quad\quad 26. \{ \dots,\frac{1}{27},\frac{1}{9},\frac{1}{3},1,3,9,27,\dots \}\\
+    21. \{ 0,1,4,9,16,25,36,\dots \} &\quad\quad 27. \{ \dots,-\pi,-\frac{\pi}{2},0,\frac{\pi}{2}, \pi,\frac{3\pi}{2},2\pi,\frac{5\pi}{2},\dots \}\\
+    22. \{ 3,6,11,18,27,38,\dots \} &\quad\quad 28.\{ \dots,-\frac{3}{2},-\frac{3}{4},0,\frac{3}{4},\frac{3}{2},\frac{9}{4},3,\frac{15}{4},\frac{9}{2},\dots \}.
+    \end{aligned}
+    $$
+    \hyperref[sol:1.2]{[Go to Solution]}
+\end{exercise}
+
+\begin{exercise}\label{ex:1.3}
+    Find the following cardinalities. 
+    $$
+    \begin{aligned}
+    29. \lvert \{ \{ 1 \},\{ 2,\{ 3,4 \} \},\varnothing \} \rvert &\quad\quad 34. \lvert \{ x\in\N:\lvert x \rvert<10 \} \rvert\\
+    30. \lvert \{ \{ 1,4 \},a,b,\{ \{ 3,4 \} \},\{ \varnothing \} \} \rvert &\quad\quad 35. \lvert \{ x\in\Z:x^2<10 \} \rvert\\
+    31. \lvert \{ \{ \{ 1 \},\{ 2, \{ 3,4 \} \},\varnothing \} \} \rvert &\quad\quad 36. \lvert \{ x\in\N:x^2<10 \} \rvert\\
+    32. \lvert \{ \{ \{ 1,4 \},a,b,\{ \{ 3,4 \} \},\{ \varnothing \} \} \} \rvert &\quad\quad 37. \lvert \{ x\in\N:x^2<0 \} \rvert\\
+    33. \lvert \{ x\in\Z: \lvert x \rvert<10 \} \rvert &\quad\quad 38. \lvert \{ x\in\N:5x\le 20 \} \rvert.
+    \end{aligned}
+    $$
+\end{exercise}\hyperref[sol:1.3]{[Go to Solution]}
+
+\begin{exercise}\label{ex:1.4}
+    Sketch the following sets of points in the $xy$-plane. 
+    $$
+    \begin{aligned}
+    39. \{ (x,y): x\in[1,2],y\in[1,2] \} &\quad\quad 46. \{ (x,y):x,y\in\R, x^2+y^2\le1 \}\\
+    40. \{ (x,y): x\in[0,1],y\in[1,2] \} &\quad\quad 47. \{ (x,y):x,y\in\R,y\ge x^2-1 \}\\
+    41. \{ (x,y):x\in[-1,1],y=1 \} &\quad\quad 48. \{ (x,y):x,y\in\R,x>1 \}\\
+    42. \{ (x,y): x=2, y\in[0,1] \} &\quad\quad 49. \{ (x,x+y):x\in\R,y\in\Z \}\\
+    43. \{ (x,y): \lvert x \rvert=2,y\in[0,1] \} &\quad\quad 50. \{ (x,\frac{x^2}{y}):x\in\R,y\in\N \}\\
+    44. \{ (x,x^2):x\in\R \} &\quad\quad 51. \{ (x,y)\in\R^2:(y-x)(y+x)=0 \}\\
+    45. \{ (x,y):x,y\in\R,x^2+y^2=1 \} &\quad\quad 52. \{ (x,y)\in\R^2:(y-x^2)(y+x^2)=0 \}.
+    \end{aligned}
+    $$
+\end{exercise}\hyperref[sol:1.4]{[Go to Solution]}

@@ -1,0 +1,26 @@
+# TeX / LaTeX auxiliary and output files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.sbc
+*.synctex.gz
+*.toc
+*.xdv
+
+# OS generated files
+.DS_Store
+Thumbs.db
