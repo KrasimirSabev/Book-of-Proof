@@ -1,3 +1,5 @@
+The idea behind this document is to show my notes and solutions to all exercises in Book of Proof 3 edition by Richard Hammack. Another reason for the document is if anyone wants to use it for self-learning or needs help with some of the exercises. I can only claim ownership of the notes and the solutions, however the exercises and some of the notes are copied mot-a-mot from the textbook. So, this is not an official publication of any sort. I just want to help people who want to self-study Set Theory, Logic and Proofs. With that out of the way, the below information concerns the content of the chapters. 
+
 This Readme.md file provides a summary of the chapter notes I have written. Additionally, the list of problems after every chapter will be listed and then solved on a different page. This is in case someone wants to use these notes as a learning tool. This way one can attempt the problems before checking the answers. 
 
 Learning methods to verify theorems. 
