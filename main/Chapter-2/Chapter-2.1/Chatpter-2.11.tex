@@ -1,0 +1,79 @@
+
+\section{Statements}
+Statements are \emph{sentences} or mathematical expressions that are either true or false. There are statements in mathematics about which we might not yet know the truth and falsity of. These are called conjectures. However, once we discover whether they are true or false, they tend to remain that way. The idea is that no in between notion exists. The fact that we do not know something does not require its own truth-value.\footnote{ Some people would heavily disagree with this. There is constructive mathematics and constructive logic, but for the time being we will just assume the above is true and roll with it. This $2$-value truth-functionality is called \emph{classical logic}.}
+
+\begin{example}
+    These are some examples of \emph{true} statements: 
+    \begin{enumerate}
+        \item $2\in\Z$
+        \item Some right angle triangles are isosceles.
+        \item Every even number is divisible by $2$.  
+    \end{enumerate}
+\end{example}
+
+\begin{example}
+    Non-statements are paired with similar statements:
+    \begin{center}
+
+        \begin{tabular}{| m{5em} | m{5cm}| }
+            \hline
+            NOT a Statement & Statement\\
+            \hline
+            Add $5$ to both sides. & Adding $5$ to both     sides of $x-5=37$ gives $x=42$. \\
+            \hline
+            $\Z$ & $42\in\Z$\\
+            \hline
+            $42$ & $42$ is not a number. \\
+            \hline
+            What is the solution of $2x=84$? & The  solution of $2x=84$ is $x=42$.\\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{example}
+
+\begin{example}
+    We often use the letters $P,Q,R,S,\dots$ to denote specific statements. When more letters are needed we tend to use subscripts. 
+    \begin{enumerate}
+        \item $P=\forall n(n\in\Z \land n > 1)\Rightarrow 2^{n}-1 \text{ is prime}$. 
+        \item $Q: $ Every polynomial of degree $n$ has at most $n$ roots. 
+        \item $R:$ The function $f(x)=x^2$ is continuous. 
+        \item $S_1: \Z\subseteq\varnothing$. 
+        \item $S_2: \{ 0,-1,-2 \}\cap\N=\varnothing$
+    \end{enumerate}
+    Examples $(1)-(3)$ are true, and example $(4)-(5)$ are false.
+\end{example}
+
+Consider the following: 
+\begin{quote}
+    The integer $x$ is even.
+\end{quote}
+Call it $Q(x)$. Is this a statement? Not really. Since there is no definite truth value. We do not know what $x$ is. Maybe it is a real number or a natural number. Only after we give a bit more information, would $Q(x)$ become a statement. As it stands, the above is an \emph{open sentence} or an \emph{open formula}. \newline
+Some statements are so important that they get their own name. For example
+\begin{theorem}
+    $$
+    R=\forall a,b,c,n\in\N(n>2)\Rightarrow a^{n}+b^{n}\ne c^{n}.
+    $$
+\end{theorem}
+Just because some statement is a theorem does not mean it is \emph{obviously true} or \emph{trivially true}. An example of one such statement is \emph{Goldbach's Conjecture}, which states that every even integer greater than $2$ is the sum of two primes. Currently, no such proof exists, unless OpenAI have published it, already... 
+
+\subsection{Exercises For Section 11}
+\begin{exercise}\label{ex:2.11}
+    Decide whether or not the following are statements. If they are, decide whether if it is true or false, where possible. 
+    \begin{enumerate}
+        \item Every real number is an even integer. 
+        \item Every even integer is a real number. 
+        \item If $x,y\in\R$ and $5x=5y$, then $x=y$. 
+        \item Sets $\Z$ and $\N$. 
+        \item Sets $\Z$ and $\N$ are infinite.
+        \item Some sets are finite. 
+        \item The derivative of any polynomial of degree $5$ is a polynomial of degree $6$. 
+        \item $\N\notin\powerset(\N)$.
+        \item $\cos(x)=-1$.
+        \item $(\R\times\N)\cap(\N\times\R)=\N^{2}$.
+        \item The integer $x$ is a multiple of $7$. 
+        \item If the integer $x$ is a multiple of $7$, then it is divisible by $7$. 
+        \item Either $x$ is a multiple of $7$, or it is not. 
+        \item Call me Ishamel. 
+        \item In the beginning, God created the heaven and the earth. 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.11]{[Go to Solution]}
