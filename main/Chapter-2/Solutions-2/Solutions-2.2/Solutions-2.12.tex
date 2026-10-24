@@ -1,0 +1,19 @@
+\section{Solutions to Exercises From Section 12}
+\begin{solution}\label{sol:2.12}\ref{ex:2.12}
+    \begin{enumerate}
+        \item $P$: `The number $8$ is even', $Q$: `The number $8$ is a power of $2$', so $P\land Q$. 
+        \item $P$: The matrix $A$ is invertible. Then $\neg P$. 
+        \item $x\ne y$ is the same as $\neg(x=y)$, so if $P:x=y$, then $\neg P:x\ne y$. 
+        \item $x < y$ is the same as $\ne(x\ge y)$, so similarly to above we have $\neg P$, where $P$ is $x\ge y$. 
+        \item $y\ge x$ is equivalent to $\neg(y<x)$, so again we can simply state $\neg P$, where $P$ is $y<x$. 
+        \item $P$: Scheduled for Wednesday, $Q$: Scheduled for Friday, so $P\lor Q$.\footnote{When we later look at quantifiers and predicates, we will find that there is another more expressive way to represent the above statement: $\exists x(P(x)\lor Q(x))$ where $x$ represents the quiz. Furthermore, we can say that there is a quiz on Wednesday or Friday but not both days: $\exists x((P(x)\lor Q(x))\land \neg(P(x)\land Q(x)))$.}
+        \item $P:x=0$ and $Q:y=0$ so, $P\land\neg Q$. 
+        \item $P:x=0$ and $Q:y=0$, so $P\lor Q$. Similarly, to the footnote, we can transform this accordingly with predicates and quantifiers. 
+        \item $x\in A\land x\notin B$.
+        \item $x\in A\lor x\in B$.
+        \item This one is slightly trickier. Let $A$ be a member of the set, then $A\in\powerset(\N)$, so now we have to `append' the condition on $A$, which is $\lvert A^{\complement} \rvert<\infty$, so together we have $A\in\powerset(\N)\land \lvert A^{\complement} \rvert<\infty$.
+        \item $H$: Happy families, $A$: Alike, $W$: Unhappy in its own way. Breaking down the statement we have, if a family is happy, then it is alike, \emph{and} if it is not happy, then it is unhappy in its own way. Therefore, $(H\Rightarrow A)\land(\neg H\Rightarrow W)$. If we don't want to use arrows or conditional statements, the formula looks thus: $(\neg H\lor A)\land (H\lor W)$.
+        \item $H$: Human beings want to be good, $S$: Too good, $R$: All the time. So, $H\land \neg S \land \neg R$. 
+        \item $P$: A man should look for what is, $Q$: A man should look for what he think should be. Then, $P\land \neg Q$.
+    \end{enumerate}
+\end{solution}

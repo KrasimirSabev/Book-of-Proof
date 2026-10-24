@@ -1,0 +1,81 @@
+\section{And, Or, Not}
+
+`And' conjoins two statements and produces a third one. When the two individual statements are both true, so is their conjuntion. Otherwise we say that the conjunction is false. 
+
+Suppose we have some propositional variables $P,Q$ and their conjunction $P\land Q$,then: 
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $P$ & $Q$ & $P\land Q$ \\
+        \hline
+        T & T & T\\
+        \hline
+        T & F & F \\
+        \hline
+        F & T & F\\
+        \hline
+        F & F & T\\
+        \hline
+    \end{tabular}
+\end{center}
+
+Another way to conjoin sentences together would be through disjunction, in other words using `or': 
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $P$ & $Q$ & $P\lor Q$\\
+        \hline
+        T & T & T \\
+        \hline
+        T & F & T \\
+        \hline
+        F & T & T \\
+        \hline
+        F & F & F\\
+        \hline
+    \end{tabular}
+\end{center}
+
+The requirement for a disjunction to be true is that \emph{at least one} of the disjuncts is true. It is important to note here, that in mathemathics, we rarely use \emph{inclusive} `or'. This corresponds to `either...or' but not both. If we ever want to express that we can, and it looks thus: 
+$$
+(P\lor Q)\land \neg Q,
+$$
+for $P,Q$ some statements. Then, notice how the truth table differs from that of \emph{exclusive} disjunction. 
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        $P$ & $Q$ & $\neg Q$ & $(P\lor Q)\land\neg Q$\\
+        \hline
+        T & T & F & F\\
+        \hline
+        T & F & T & T\\
+        \hline
+        F & T & F & F\\
+        \hline
+        F & F & T & F\\
+        \hline
+    \end{tabular}
+\end{center}
+
+In the above example we can also see how the negation operator functions. At this point it is enough to say that it simply reverses the truth value of the propositional variable. However, later some important equivalences will become apparaent, when we look at De Morgan's Law or Conditional statements. 
+
+\subsection{Exercises for Section 12}
+\begin{exercise}\label{ex:2.12}
+    Express each statement or open sentence in symbolic form. State what the propositional variables represent. You can use the following symbols $P,Q,\land, \lor, \neg,\in,=$
+    \begin{enumerate}
+        \item The number $8$ is both even and a power of $2$. 
+        \item The matrix $A$ is not invertible. 
+        \item $x\ne y$ 
+        \item $x<y$ 
+        \item $y\ge x$ 
+        \item There is a quiz scheduled for Wednesday or Friday. 
+        \item The number $x$ equals zero, but the number $y$ does not. 
+        \item At least one of the numbers $x$ and $y$ equals $0$. 
+        \item $x\in A-B$.
+        \item $x\in A\cup B$.
+        \item $A\in \{ X\in\powerset(\N):\lvert X^{\complement} \rvert < \infty\}$. 
+        \item Happy families are all alike, but each unhappy family is unhappy in its own way. 
+        \item Human beings want to be good, but not too good, and not all the time. 
+        \item A man should look for what is, and not for what he thinks should be. 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.12]{[Go To Solution]}

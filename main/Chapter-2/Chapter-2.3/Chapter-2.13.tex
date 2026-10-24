@@ -1,0 +1,69 @@
+\section{Conditional Statements}
+
+Consider the following statement:
+\begin{quote}
+    $R$: If the integer $a$ is a multiple of $6$, then $a$ is divisible by $2$. 
+\end{quote}
+The statement can be broken down into two parts: 
+\begin{quote}
+    $P$: The integer is a multiple of $6$ and $Q$: The integer is divisble by $2$.
+\end{quote}
+So, $R$ becomes $P\Rightarrow Q$. This is a classic example of a conditional statement. Now, let us look at the truth table for the conditional operator. 
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $P$ & $Q$ & $P\Rightarrow Q$\\
+        \hline
+        T & T & T \\
+        \hline
+        T & F & F \\
+        \hline
+        F & T & T \\
+        \hline
+        F & F & T\\
+        \hline
+    \end{tabular}
+\end{center}
+
+There are some peculiarities at first sight. Consider the example: 
+\begin{quote}
+    If you pass the exam, you will pass the course. 
+\end{quote}
+If were made the promise that if you pass the exam (second line of the table above), then you will pass the course (but you do not), something is wrong. Someone lied to you. The idea as to why the third case looks the way it does is somewhat complicated. I will try to explain it to the best of my ability. Consider the example: 
+\begin{quote}
+    If it is sunny outside, then people are happy. 
+\end{quote}
+It is easy to imagine that people are happy when it is raining or when it is cloudy. So the antecedent (the first part of the conditional statement) does not \emph{strictly imply} the conclusion. To make sense of this, it is better to think about the antecedent as a type of hypothesis. A researcher can sometimes get the desired result with a wrong hypothesis. On a more formal level, there is a notion of \emph{minimal logic} (which at this point might or might not be familiar to whoever is reading this) but the general point is that in order to construct Propositional Logic, we only require $\neg, \lor$ operators. Every other operator can be derived by those two. So, $P\Rightarrow Q$ becomes $\neg P\lor Q$. And this perfectly fits with the third case in the truth table, either the hypothesis is wrong or the conclusion is true but we cannot have that $P\lor \neg Q$, or that the hypothesis is true and the conclusion is logically false.\footnote{I hope this sheds some light on the discussion. One can also simply choose the accept that this is true and later work out why.}
+
+Now, some alternative constructions of conditionals which is good to internalise:
+\begin{enumerate}
+    \item If $P$, then $Q$. 
+    \item $Q$ if $P$. 
+    \item $Q$ whenever $P$. 
+    \item Whenever $P$, then also $Q$. 
+    \item $P$ is a sufficient condition for $Q$. 
+    \item For $Q$, it is sufficient that $P$. 
+    \item $Q$ is a necessary condition for $P$. 
+    \item For $P$, it is necessary that $Q$. 
+    \item $P$ only if $Q$. 
+\end{enumerate}
+
+\section{Exercises for Section 13}
+\begin{exercise}\label{ex:2.13}
+    Without changing their meaning, convert each of the following sentences into a sentences having the form `if $P$, then $Q$'. 
+    \begin{enumerate}
+        \item A matrix is invertible provided that its determinant is not zero. 
+        \item For a function to be continuous, it is sufficient that it is differentiable. 
+        \item For a function to be continuous, it is necessary that it is integrable. 
+        \item  A function is rational if it is a polynomial.
+        \item An integer is divisible by $8$ only if it is divisible by $4$. 
+        \item Whenever a surface has only one side, it is non-orientable. 
+        \item A series converges whenever it converges absolutely. 
+        \item A geometric series with ratio $r$ converges if $\lvert r \rvert<1$.
+        \item A function is integrable provided the function is continuous. 
+        \item The discriminant is negative only if the quadratic equation has no real solutions. 
+        \item You fail only if you stop writing.  
+        \item People will generally accept facts as truth only if the facts agree with what they already beleive. 
+        \item Whenever people agree with me I feel I must be wrong. 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.13]{[Go to Solution]}
