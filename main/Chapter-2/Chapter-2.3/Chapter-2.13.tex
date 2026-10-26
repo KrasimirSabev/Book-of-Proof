@@ -9,22 +9,22 @@ The statement can be broken down into two parts:
     $P$: The integer is a multiple of $6$ and $Q$: The integer is divisble by $2$.
 \end{quote}
 So, $R$ becomes $P\Rightarrow Q$. This is a classic example of a conditional statement. Now, let us look at the truth table for the conditional operator. 
-\begin{center}
-    \begin{tabular}{|c|c|c|}
-        \hline
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
         $P$ & $Q$ & $P\Rightarrow Q$\\
-        \hline
+        \midrule
         T & T & T \\
-        \hline
+        
         T & F & F \\
-        \hline
+        
         F & T & T \\
-        \hline
+        
         F & F & T\\
-        \hline
+        \bottomrule
     \end{tabular}
-\end{center}
-
+\end{table}
 There are some peculiarities at first sight. Consider the example: 
 \begin{quote}
     If you pass the exam, you will pass the course. 
@@ -48,7 +48,7 @@ Now, some alternative constructions of conditionals which is good to internalise
     \item $P$ only if $Q$. 
 \end{enumerate}
 
-\section{Exercises for Section 13}
+\subsection{Exercises for Section 13}
 \begin{exercise}\label{ex:2.13}
     Without changing their meaning, convert each of the following sentences into a sentences having the form `if $P$, then $Q$'. 
     \begin{enumerate}

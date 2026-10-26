@@ -3,60 +3,60 @@
 `And' conjoins two statements and produces a third one. When the two individual statements are both true, so is their conjuntion. Otherwise we say that the conjunction is false. 
 
 Suppose we have some propositional variables $P,Q$ and their conjunction $P\land Q$,then: 
-\begin{center}
-    \begin{tabular}{|c|c|c|}
-        \hline
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
         $P$ & $Q$ & $P\land Q$ \\
-        \hline
+        \midrule
         T & T & T\\
-        \hline
-        T & F & F \\
-        \hline
+        
+        T & F & F\\
+        
         F & T & F\\
-        \hline
-        F & F & T\\
-        \hline
-    \end{tabular}
-\end{center}
-
-Another way to conjoin sentences together would be through disjunction, in other words using `or': 
-\begin{center}
-    \begin{tabular}{|c|c|c|}
-        \hline
-        $P$ & $Q$ & $P\lor Q$\\
-        \hline
-        T & T & T \\
-        \hline
-        T & F & T \\
-        \hline
-        F & T & T \\
-        \hline
+        
         F & F & F\\
-        \hline
+        \bottomrule
     \end{tabular}
-\end{center}
-
+\end{table}
+Another way to conjoin sentences together would be through disjunction, in other words using `or': 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        $P$ & $Q$ & $P\lor Q$ \\
+        \midrule
+        T & T & T\\
+        
+        T & F & T\\
+        
+        F & T & T\\
+        
+        F & F & F\\
+        \bottomrule
+    \end{tabular}
+\end{table}
 The requirement for a disjunction to be true is that \emph{at least one} of the disjuncts is true. It is important to note here, that in mathemathics, we rarely use \emph{inclusive} `or'. This corresponds to `either...or' but not both. If we ever want to express that we can, and it looks thus: 
 $$
 (P\lor Q)\land \neg Q,
 $$
-for $P,Q$ some statements. Then, notice how the truth table differs from that of \emph{exclusive} disjunction. 
-\begin{center}
-    \begin{tabular}{|c|c|c|c|}
-        \hline
+for $P,Q$ some statements. Then, notice how the truth table differs from that of \emph{exclusive} disjunction.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{cccc}
+        \toprule
         $P$ & $Q$ & $\neg Q$ & $(P\lor Q)\land\neg Q$\\
-        \hline
+        \midrule
         T & T & F & F\\
-        \hline
+        
         T & F & T & T\\
-        \hline
+        
         F & T & F & F\\
-        \hline
+        
         F & F & T & F\\
-        \hline
+        \bottomrule
     \end{tabular}
-\end{center}
-
+\end{table}
 In the above example we can also see how the negation operator functions. At this point it is enough to say that it simply reverses the truth value of the propositional variable. However, later some important equivalences will become apparaent, when we look at De Morgan's Law or Conditional statements. 
 
 \subsection{Exercises for Section 12}

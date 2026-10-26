@@ -1,0 +1,61 @@
+\section{Logical Equivalences}
+Logical equivalences refer to the notion of two formulas having the same truth values. Consider 
+$$
+P \Leftrightarrow Q \text{ and } (P\land Q)\lor (\neg P\land \neg Q)
+$$
+or 
+$$
+P \Rightarrow Q \text{ and } \neg Q\Rightarrow \neg P.
+$$
+
+Some equivalences are more important than others though. That is to say, some equivalences have their own special names. One such, is called \emph{De Morgan's Law}:
+\begin{enumerate}
+    \item $\neg(P\land Q) \equiv \neg P\lor \neg Q$
+    \item $\neg(P\lor Q) \equiv \neg P\land \neg Q$
+\end{enumerate}
+The symbol `$\equiv$' simply states that these two expressions are equivalent. You might see me inconsistenly using $=$ and $\equiv$. For the time being they serve the same purpose.
+
+Other such laws are the \emph{commutative, associative, and distributive laws}: 
+\begin{enumerate}
+    \item [Commutative] $(P\land Q)\equiv(Q\land P)$.
+    \item [Associative] $(P\land Q)\land R\equiv P\land (Q\land R)$.
+    \item [Distributive] $P\lor(Q\land R)\equiv (P\lor Q)\land (P\lor R)$. 
+\end{enumerate}
+It is important to note here, that $\lor$ is also commutative and associative. If you have never seen these notions before, simply remember that same operators \emph{associate with each other} whereas different operators \emph{distribute over each other}. 
+We can draw further comparisons from algebra to make sense of these. Another example of distribution is:
+$$
+x \cdot (y + z) = x\cdot y + x\cdot z
+$$
+and an example of association is: 
+$$
+x+(y+z) = x + y + z.
+$$
+These are more familiar, but the idea is the exact same with propositional variables. One can draw further comparisons between $\lor$ and $\cup$ and $+$, as well as $\land,\cap,\cdot$. These share some structural similarities and this might help you understand them better, but they are not the same and they are not interchangebale. If you are doing a logic problem and you use $\cup$ instead of $\lor$, then this would be wrong.
+
+\subsection{Exercises for Section 16}
+
+\begin{exercise}\label{ex:2.16.1}
+    Use truth tables to show that the following statements are logically equivalent. 
+    \begin{enumerate}
+        \item $P\land (Q\lor R) = (P\land Q)\lor (Pland R)$
+        \item $P\lor(Q\land R)=(P\lor Q)\land(P\lor R)$
+        \item $P\Rightarrow Q = \neg P\lor Q$
+        \item $\neg(P\lor Q)=\neg P\land \neg Q$
+        \item $\neg (P\lor Q\lor R)=\neg P\land \neg Q \land \neg R$
+        \item $\neg (P\land Q\land R)= \neg P\lor \neg Q\lor \neg R$
+        \item $P\Rightarrow Q = (P\land \neg Q)\Rightarrow (Q\land \neg Q)$
+        \item $\neg P\Rightarrow Q = (P\Rightarrow\neg Q)\land (\neg Q\Rightarrow P)$
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.16.1]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.16.2}
+    Decide whether or not the following pairs of statements are logically equivalent. 
+    \begin{enumerate}
+        \item $P\land Q$ and $\neg(\neg P\lor \neg Q)$
+        \item $(P\Rightarrow Q)\lor R$ and $\neg((P\land \neg Q)\land \neg R)$
+        \item $\neg P\land (P\rightarrow Q)$ and $\neg(Q\Rightarrow P)$
+        \item $\neg (P\Rightarrow Q)$ and $P\land \neg Q$
+        \item $P\lor (Q\land R)$ and $(P\lor Q)\land R$
+        \item $P\land (Q\lor \neg Q)$ and $\neg P\Rightarrow (Q\land\neg Q)$
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.16.2]{[Go to Solution]}

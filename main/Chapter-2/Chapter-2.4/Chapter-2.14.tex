@@ -1,0 +1,43 @@
+\section{Biconditional Statements}
+It is important to make a distinction between $P\Rightarrow Q$ and $Q\Rightarrow P$. We say that when $P\Rightarrow Q$, then $Q\Rightarrow P$ is its \emph{converse}. However, when both statements are true we say that it is a \emph{biconditional}. 
+$$
+(P\Rightarrow Q)\land(Q\Rightarrow P) := P \Leftrightarrow Q
+$$
+In terms of the \emph{semantics} or, in other words, the truth table of the biconditional, the following is true: 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        $P$ & $Q$ & $P\Leftrightarrow Q$\\
+        \midrule
+        T & T & T\\
+        
+        T & F & F \\
+        
+        F & T & F \\
+        
+        F & F & T\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+We see that the biconditional is correct \emph{only when} $P=T$ and $Q=T$ or when they both equal $F$.\newline
+There are many ways of saying `if and only if' in English, some are as follows: 
+\begin{enumerate}
+    \item $P$ iff $Q$.
+    \item $P$ is a necessary and sufficient condition for $Q$. 
+    \item $P$ is equivalent to $Q$.
+    \item For $P$ it is necessary and sufficient that $Q$. 
+    \item If $P$, then $Q$ and conversely. 
+\end{enumerate}
+
+\subsection{Exercises for Section 14}
+\begin{exercise}\label{ex:2.14}
+    Without changing their meanings, convert each of the following sentences into a sentence having the form: $P\Leftrightarrow Q$. 
+    \begin{enumerate}
+        \item For a matrix $A$ to be invertible, it is necessary and sufficient that $\det(A)\ne0$. 
+        \item If a function has a constant derivative, then it is linear, and conversely. 
+        \item If $xy=0$, then $x=0$ or $y=0$, and conversely. 
+        \item If $a\in\Q$, then $5a\in\Q$, and if $5a\in\Q$, then $a\in\Q$. 
+        \item For an occurence to become an adventure, it is necessary and sufficient for one to recount it. 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.14]{[Go to Solution]}

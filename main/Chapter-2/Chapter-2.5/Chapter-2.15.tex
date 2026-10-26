@@ -1,0 +1,64 @@
+\section{Truth Tables for Statements}
+Why is it that a mathematical statement can have false truth values in its semantic representaion?\newline
+Suppose the following: 
+\begin{quote}
+    You will pass your exam iff you get an A or you get a B on your finals.
+\end{quote}
+If you got an A and you did not pass the module, then you were lied to which is also reflected in the truth table as a `false' truth value. The moral of the story is, people can lie but mathematics cannot! Trust no one!
+\begin{table}[H]
+    \centering
+    \begin{tabular}{cccc}
+        \toprule
+        $P$ & $Q$ & $R$ & $P\lor(Q\Rightarrow R)$\\
+        \midrule
+        T & T & T & T \\
+        
+        T & T & F & T\\
+        
+        T & F & T & T\\
+        
+        T & F & F & T\\
+        
+        F & T & T & T\\
+        
+        F & T & F & \textbf{F}\\
+        
+        F & F & T & T\\
+        
+        F & F & F & T\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+The truth table shows us that when $P=F$ and $R=F$, then the statement will be false.\newline
+I want to make a somewhat important note here for bigger truth tables. If you have never done big truth tables before, you might end up missing some cases. The best way I have found to make sure I have covered all the diferent cases (when doing a truth table manually) is the following. 
+\begin{itemize}
+    \item Always check how many propositional statements you have. 
+    \item If you have $3$, for example, then you want to make sure you have $8$ rows. 
+    \item $2^{n}=$ the number of rows your truth table needs, where $n$ is the number of propositional statements.
+    \item When writing out the truth table, I always start by writing the truth values for the first statement. Notice that, when there are $3$ propositional values, the first one always has $4$ Ts, followed by $4$ Fs. The second has $2$ Ts, followed by $2$ Fs, followed by $2$ Ts, and again by $2$ Fs. And the last one has interchaging Ts and Fs on every row, starting with a T and finishing on an F. I have found this to work for me but there are many other ways to do it. 
+    \item This can be scaled to larger examples up to a point. For $4$ propositional variables we would have $8$ Ts, followed by $8$ Fs, then $4$ Ts, $\dots$ and so on. 
+\end{itemize}
+
+\subsection{Exercises for Section 15}
+\begin{exercise}\label{ex:2.15.1}
+    Write a truth table for the logical statements in problems $(1)-(9)$:
+    \begin{enumerate}
+        \item $P\lor (Q\Rightarrow R)$
+        \item $(Q\lor R)\Leftrightarrow(R\land Q)$
+        \item $\neg(P\Rightarrow Q)$
+        \item $\neg(P\lor Q)\lor (\neg P)$
+        \item $(P\land \neg P)\lor Q$
+        \item $(P\land \neg P)\land Q$
+        \item $(P\land\neg P)\Rightarrow Q$
+        \item $P\lor (Q\land \neg R)$
+        \item $\neg(\neg P \lor \neg Q)$
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.15.1]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.15.2}
+    Suppose the statement $((P\land Q)\lor R)\Rightarrow (R\lor S)$ is false. Find the truth values of $P,Q,R,S$. (This can be done without a truth table, but try both)
+\end{exercise}\hyperref[sol:2.15.2]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.15.3}
+    Suppose $P$ is false and the statement $(R\Rightarrow S)\Leftrightarrow (P\land Q)$ is true. Find the truth values of $R,S$. (Similarly, to the above exercise).
+\end{exercise}\hyperref[sol:2.15.3]{[Go to Solution]}

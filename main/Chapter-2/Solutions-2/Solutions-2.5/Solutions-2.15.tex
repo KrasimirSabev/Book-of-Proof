@@ -1,0 +1,211 @@
+\section*{Solutions for Exercises from Section 15}
+\begin{solution}\label{sol:2.15.1}\ref{ex:2.15.1}
+    For $(1)$: 
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{ccccc}
+    \toprule
+    $P$ & $Q$ & $R$ & $Q \Rightarrow R$ & $P \lor (Q \Rightarrow R)$ \\
+    \midrule
+    T & T & T & T & T \\
+    T & T & F & F & T \\
+    T & F & T & T & T \\
+    T & F & F & T & T \\
+    F & T & T & T & T \\
+    F & T & F & F & \textbf{F} \\
+    F & F & T & T & T \\
+    F & F & F & T & T \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    $(2)$:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccc}
+        \toprule
+        $Q$ & $R$ & $(Q\lor R)\Leftrightarrow (R\land Q)$\\
+        \midrule
+        T & T & T\\
+        T & F & F\\
+        F & T & F\\
+        F & F & T\\
+        \bottomrule
+        \end{tabular}
+    \end{table}    
+   
+    $(3)$:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccc}
+            \toprule
+            $P$ & $Q$ & $\neg(P\Rightarrow Q)$\\
+            \midrule
+            T & T & F \\
+            T & F & T \\
+            F & T & F \\
+            F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    $(4)$:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccc}
+            \toprule
+            $P$ & $Q$ & $\neg(P\lor Q)\lor(\neg P)$\\
+            \midrule
+            T & T & F\\
+            T & F & F\\
+            F & T & T\\
+            F & F & T\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    $(5)$:
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{ccc}
+            \toprule
+            $P$ & $Q$ & $(P\land\neg P)\lor Q$\\
+            \midrule
+            T & T & T\\
+            T & F & F\\
+            F & T & T\\
+            F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    $(6)$: 
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{ccc}
+            \toprule
+            $P$ & $Q$ & $(P\land \neg P)\land Q$\\
+            \midrule
+            T & T & F\\
+            T & F & F\\
+            F & T & F\\
+            F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    $(7)$:
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{ccc}
+            \toprule
+            $P$ & $Q$ & $\neg(P\land \neg P)\Rightarrow Q$\\
+            \midrule
+            T & T & T\\
+            T & F & T\\
+            F & T & T\\
+            F & F & T\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    $(8)$:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+            \toprule
+            $P$ & $Q$ & $R$ & $P\lor(Q\land\neg R)$\\
+            \midrule
+            T & T & T & T\\
+            T & T & F & T\\
+            T & F & T & T\\
+            T & F & F & T\\
+            F & T & T & F\\
+            F & T & F & T\\
+            F & F & T & F\\
+            F & F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    $(9)$:
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{ccc}
+            \toprule
+            $P$ & $Q$ & $\neg(P\lor\neg Q)$\\
+            \midrule
+            T & T & T\\
+            T & F & F\\
+            F & T & F\\
+            F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}    
+\end{solution}
+
+\begin{solution}\label{sol:2.15.2}\ref{ex:2.15.2}
+    First we will find it without a truth table, and then we will confirm our answer by using a truth table.\newline
+    First, we need to find the global operator, in our case 
+    $$
+    ((P\land Q)\lor R)\Rightarrow (R\lor S)
+    $$
+    this is the `$\Rightarrow$'. So, we know that if we have a true hypothesis and a false conclusion, then the conditional will be false. Therefore, we require that $P=T,Q=T, R=F, S=F$. Now to check with our truth table:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccc}
+            \toprule
+            $P$ & $Q$ & $R$ & $S$ & $((P\land Q)\lor R)\Rightarrow (R\lor S)$\\
+            T & T & T & T & T\\
+            T & T & T & F & T\\
+            T & T & F & T & T\\
+            T & T & F & F & \textbf{F}!\\
+            T & F & T & T & T\\
+            T & F & T & F & T\\
+            T & F & F & T & T\\
+            T & F & F & F & T\\
+            F & T & T & T & T\\
+            F & T & T & F & T\\
+            F & T & F & T & T\\
+            F & T & F & F & T\\
+            F & F & T & T & T\\
+            F & F & T & F & T\\
+            F & F & F & T & T\\
+            F & F & F & F & T\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    So, everything checks out.
+\end{solution}
+
+\begin{solution}\label{sol:2.15.3}\ref{ex:2.15.3}
+    We will follow the same approach. The formula is 
+    $$
+    (R\Rightarrow S)\Leftrightarrow (P\land Q)
+    $$
+    and we are supposing that it is true. So we learned that the biconditional requires both sides to have the same truth value. Then if $R=T$ and $P,Q=T$. It follows that the biconditional is true. Let us examine the truth table:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccc}
+            \toprule
+            $P$ & $Q$ & $R$ & $S$ & $((P\land Q)\lor R)\Rightarrow (R\lor S)$\\
+            T & T & T & T & T\\
+            T & T & T & F & F (because of $S$)\\
+            T & T & F & T & T\\
+            T & T & F & F & T\\
+            T & F & T & T & F (because of $Q$)\\
+            T & F & T & F & T\\
+            T & F & F & T & F (because of $Q$)\\
+            T & F & F & F & F (because of $Q$)\\
+            F & T & T & T & F (because of $P$)\\
+            F & T & T & F & T\\
+            F & T & F & T & F (because of $P$)\\
+            F & T & F & F & F (because of $P$)\\
+            F & F & T & T & F (because of $P,Q$)\\
+            F & F & T & F & T\\
+            F & F & F & T & F\\
+            F & F & F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{solution}
