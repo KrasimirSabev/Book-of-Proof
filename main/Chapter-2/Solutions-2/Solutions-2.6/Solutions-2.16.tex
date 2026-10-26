@@ -1,8 +1,242 @@
 \section*{Solutions for Exercises From Section 16}
 \begin{solution}\label{sol:2.16.1}\ref{ex:2.16.1}
-    
+    $(1)$:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccc}
+            \toprule
+            $P$ & $Q$ & $R$ & $P\land(Q\lor R)$ & $(P\land Q)\lor(P\land R)$\\
+            \midrule
+            T & T & T & T & T\\
+            T & T & F & T & T\\
+            T & F & T & T & T\\
+            T & F & F & F & F\\
+            F & T & T & F & F\\
+            F & T & F & F & F\\
+            F & F & T & F & F\\
+            F & F & F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    The truth table above shows that the two expressions are logically equivalent. We could have inferred the same result by considering the distribution law. 
+
+    $(2)$: 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccc}
+            \toprule
+            $P$ & $Q$ & $R$ & $P\lor (Q\land R)$ & $(P\lor Q)\land (P\lor R)$\\
+            \midrule
+            T & T & T & T & T\\
+            T & T & F & T & T\\
+            T & F & T & T & T\\
+            T & F & F & T & T\\
+            F & T & T & T & T\\
+            F & T & F & F & F\\
+            F & F & T & F & F\\
+            F & F & F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    The same reasoning from $(1)$ holds here as well. 
+
+    $(3)$: 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+            \toprule
+            $P$ & $Q$ & $P\Rightarrow Q$ & $\neg P\lor Q$\\
+            \midrule
+            T & T & T & T\\
+            T & F & F & F\\
+            F & T & T & T\\
+            F & F & T & T\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    In the table above I omitted the truth table for $\neg P$, if one wanted to include it that would be an extra column with the reverse truth values of $P$. As we can see, the truth tables match, so the expressions are logically equivalent. 
+
+    $(4)$:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+            \toprule
+            $P$ & $Q$ & $\neg (P\lor Q)$ & $\neg P\land \neg Q$\\
+            \midrule
+            T & T & F & F\\
+            T & F & F & F\\
+            F & T & F & F\\
+            F & F & T & T\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    We can also use De Morgan's law to infer the logical equivalence of this formula. 
+
+    $(5)$: 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccc}
+            \toprule
+            $P$ & $Q$ & $R$ & $\neg(P\lor Q\lor R)$ & $\neg P\land \neg Q \land \neg R$\\
+            \midrule
+            T & T & T & F & F\\
+            T & T & F & F & F\\
+            T & F & T & F & F\\
+            T & F & F & F & F\\
+            F & T & T & F & F\\
+            F & T & F & F & F\\
+            F & F & T & F & F\\
+            F & F & F & T & T\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    $(6)$: 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccccc}
+            \toprule
+            $P$ & $Q$ & $R$ & $\neg(P\land Q\land R)$ & $\neg P\lor \neg Q\lor \neg R$\\
+            \midrule
+            T & T & T & F & F\\
+            T & T & F & T & T\\
+            T & F & T & T & T\\
+            T & F & F & T & T\\
+            F & T & T & T & T\\
+            F & T & F & T & T\\
+            F & F & T & T & T\\
+            F & F & F & T & T\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    $(7)$: 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+            \toprule
+            $P$ & $Q$ & $P\Rightarrow Q$ & $(P\land \neg Q)\Rightarrow (Q\land\neg Q)$\\
+            \midrule
+            T & T & T & T\\
+            T & F & F & F\\
+            F & T & T & T\\
+            F & F & T & T\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    Here it's important to notice that the first and last case are sort of swapped. When $P,Q=T$, then $P\Rightarrow Q$ is clearly true but $(P\land \neg Q)$ is false and $Q\land\neg Q$ is also false, that's what gives us the desired truth value. In fact $Q\land\neg Q$ is always false. 
+
+    $(8)$: 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+            \toprule
+            $P$ & $Q$ & $\neg P\Leftrightarrow Q$ & $(P\Rightarrow \neg Q)\land (\neg Q\Rightarrow P)$\\
+            \midrule
+            T & T & F & F\\
+            T & F & T & T\\
+            F & T & T & T\\
+            F & F & F & F\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
 \end{solution}
 
 \begin{solution}\label{sol:2.16.2}\ref{ex:2.16.2}
+    I will not be making truth tables for these. However, it could be good practice to do that if you wish. Rather this solution will challenge you to slowly start thinking about proofs and try to do it in a more informal way. 
+    $(1)$: 
+    $$
+    P\land Q = \neg(\neg P\lor \neg Q)
+    $$
+    This is true. Let us use De Morgan's Law to see why. We know that by De Morgan's Law we have
+    $$
+    \neg(P\land Q) = \neg P\lor \neg Q
+    $$
+    So, if we introduce another negation to both sides we have 
+    $$
+    \neg\neg(P\land Q)= \neg(\neg P\lor \neg Q).
+    $$
+    At this point we have not looked at that but we can simply remove $\neg\neg$ because it gives us the original truth value. So, the two expressions are logically equivalent. 
     
+    $(2)$: Assume that they are equivalent and we will try to simplify both sides.
+    $$
+    (P\Rightarrow Q)\lor R = \neg((P\land \neg Q)\land \neg R)
+    $$
+    Let us start from the LHS, we know that $P\Rightarrow Q=\neg P\lor Q$, so the expression becomes 
+    $$
+    \neg P\lor Q\lor R
+    $$
+    This cannot be simplified further, so we move to the RHS\@: 
+    $$
+    \neg(P\land \neg Q\land \neg R)\quad \text{by Associativity}
+    $$
+    Then 
+    $$
+    \neg P\lor Q\lor R \quad \text{by De Morgan's Law}
+    $$
+    Therefore, these two expressions are also logically equivalent. 
+
+    $(3)$: 
+    Again, we assume for equivalence
+    $$
+    \neg P\land (P\Rightarrow Q) = \neg(Q\Rightarrow P)
+    $$
+    Starting from the LHS again, we have: 
+    $$
+    \neg P\land (\neg P\lor Q) = \neg P \quad \text{by Absorption}
+    $$
+    We have not looked at this in the notes. Absorption is simply the idea that when we have something of the form $P\lor (P\land Q)$ it simplifies to $P$. 
+    Now, we move to the RHS\@: 
+    $$
+    \neg(Q\Rightarrow P) = \neg(\neg Q\lor P) = Q \land \neg P \quad \text{By Simplification and De Morgan's Law}
+    $$
+    So, the final result is 
+    $$
+    \neg P \text{ and } Q\land \neg P
+    $$
+    These are \emph{not} logically equivalent. 
+
+    $(4)$: 
+    $$
+    \neg (P\Rightarrow Q) = P\land \neg Q
+    $$
+    LHS\@:
+    $$
+    \neg (\neg P\lor Q) = P\land \neg Q \quad \text{by De Morgan's Law}
+    $$
+    Since, we can see that the LHS matches the RHS, it follows that the two expressions are logically equivalent. 
+    
+    $(5)$:
+    $$
+    P\lor (Q\land R) = (P\lor Q)\land R
+    $$
+    LHS: 
+    $$
+    (P\lor Q)\land (P\lor R)\quad \text{by Distributive Law}
+    $$
+    RHS: 
+    $$
+    (P\land R)\lor (Q\land R) \quad \text{by Distributive Law}
+    $$
+    It follows that these are not logically equivalent. 
+    
+    $(6)$:
+    $$
+    P\land (Q\lor \neg Q) = \neg P\Rightarrow (Q\land \neg Q)
+    $$
+    LHS simplifies to: 
+    $$
+    P
+    $$
+    The reason is that $Q$ and $\neg Q$ cannot both be true. 
+    RHS: 
+    $$
+    P \lor (Q\land \neg Q)
+    $$
+    But notice that $Q\land\neg Q$ is a contradiction, this will always be false, so we simplify further to 
+    $$
+    P
+    $$
+    These are, then, logically equivalent. 
+
 \end{solution}
