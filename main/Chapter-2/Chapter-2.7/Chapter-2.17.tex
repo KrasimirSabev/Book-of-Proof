@@ -1,0 +1,63 @@
+\section{Quantifiers} 
+Informal introduction of $\forall, \exists$:
+\begin{quote}
+    $\forall x\in X(P(x))$ to mean that \emph{every} $x$ in the set $X$ has a certain property $P$.\newline
+    $\exists x\in X(P(x))$ to mean that \emph{there is at least one} $x$ with the property $P$ in $X$. 
+\end{quote}
+So, we can form the following definition. 
+\begin{defn}
+    The symbols $\forall, \exists$ are called quantifiers.\newline
+    $\forall$ represents the phrase `for each, for all, for every'.\newline
+    $\exists$ represents the phrase `exists, there is'.
+\end{defn}
+
+For example, let $\{n: n\in\Z, 2n\in E\}$, where $E$ means `even numbers', then we can also express this as:\footnote{Notice that at this point we are talking about properties of some sort, rather than sets.} 
+$$
+\forall n\in\Z,E(2n).
+$$
+Another example is the statement of the form $X\subseteq\N$ and $\lvert X \rvert=5$ can be translated as: 
+$$
+\exists X(X\subseteq\N\land(\lvert X \rvert=5))
+$$
+or 
+$$
+\exists X\in\powerset(\N),\lvert X \rvert=5.
+$$
+
+\begin{example}
+    The following English statements are paired with their translations into symbolic form. 
+    \begin{enumerate}
+        \item Every integer that is not odd is even. $\rightarrow$ $\forall n\in\Z(\neg O(n)\Rightarrow E(n))$.
+        \item There is an integer that is not even. $\rightarrow$ $\exists n\in\Z(\neg E(n))$
+        \item For every real number $x$, there is a real number $y$ such that $y^{3}=x$. $\rightarrow$ $\forall x\in\R\exists y\in \R(y^{3}=x)$.
+        \item Given any two rational numbers $a,b$, the product $ab$ is rational. $\rightarrow$ $\forall a,b\in\Q(ab\in\Q)$.
+    \end{enumerate}
+\end{example}
+
+\begin{example}
+    False Quantified Statements:
+    \begin{enumerate}
+        \item Every integer is even. $\rightarrow$ $\forall n\in\Z(E(n))$.
+        \item There is an integer $n$ for which $n^{2}=2$. $\rightarrow$ $\exists n\in\Z(n^{2}=n)$.
+        \item For every real number $x$, there is a real number $y$, such that $y^{2}=x$. $\rightarrow$ $\forall x\in\R\exists y\in\R(y^{2}=x)$.
+        \item Given any two rational numbers $a,b$, the number $\sqrt{ab}$ is irrational. $\rightarrow$ $\forall a,b\in\Q(\sqrt{ab}\in\Q)$.
+    \end{enumerate}
+\end{example}
+\emph{Note:} One should be careful when using quantifiers, since they are easy to misuse. Hopefully, the above examples show why.
+
+\subsection{Exercises for Section 17}
+\begin{exercise}\label{ex:2.17.1}
+    Write the following as English sentences. Decide whether they are true or false. 
+    \begin{enumerate}
+        \item $\forall x\in\R(x^{2}>0)$.
+        \item $\forall x\in\R\exists n \in\N(x^{n}\le 0)$.
+        \item $\exists a\in\R\forall x\in\R(ax=x)$.
+        \item $\forall X\in\powerset(\N)(X\subseteq\R)$.
+        \item $\forall n\in\N\exists X\in\powerset(\N)(\lvert X \rvert<n)$.
+        \item $\exists n\in\N\forall X\in\powerset(\N)(\lvert X \rvert<n)$.
+        \item $\forall X\subseteq\N\exists n\in\Z(\lvert X \rvert=n)$.
+        \item $\forall n\in\Z\exists X\subseteq\N(\lvert X \rvert=n)$.
+        \item $\forall n\in\Z\exists m\in\Z(m=n+5)$.
+        \item $\exists m\in\Z\forall n\in\Z(m=5+n)$.
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.17.1]{[Go to Solution]}
