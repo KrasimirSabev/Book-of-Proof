@@ -1,0 +1,18 @@
+\section*{Solutions to Exercises From Section 20}
+
+\begin{solution}\label{sol:2.20.1}\ref{ex:2.20.1}
+    \begin{enumerate}
+        \item $\neg\exists x,y(P(x)\land \neg P(y))=\forall x,y(\neg P(x)\lor P(y))$.
+        \item $\neg(\forall x(P(x)\Rightarrow \neg Q(\sqrt{x})))=\exists x(P(x)\land Q(\sqrt{x}))$.
+        \item $\neg(\forall p(P(p)\Rightarrow \exists q(P(q)\land q>p)))=\exists p(P(p)\land \forall q(\neg P(q)\lor q \le p))$.
+        \item $\neg(\forall \epsilon\in\R^{+}\exists\delta\in\R^{+}\forall x\in\R(\lvert x-a \rvert<\delta\Rightarrow \lvert f(x)-f(a) \rvert<\epsilon))=\exists \epsilon\in\R^{+}\forall \delta\in\R^{+}\exists x\in\R(\lvert x-a \rvert<\delta \land \lvert f(x)-f(a) \rvert\ge \epsilon)$.
+        \item $\neg(\forall \epsilon \in \R^{+}\exists M\in\R^{+}\forall x\in\R(x>M\Rightarrow\lvert f(x)-b \rvert<\epsilon))=\exists\epsilon\in\R^{+}\forall M\in\R^{+}\exists x\in\R(x>M\land \lvert f(x)-b \rvert\ge \epsilon)$.
+        \item $\neg(\exists a\in\R\forall x\in\R(a+x=x))=\forall a\in\R\exists x\in\R(a+x\ne x)$. 
+        \item $\neg(\forall x(F(x)\Rightarrow \neg E(x)))=\exists x(F(x)\land E(x))$. 
+        \item $\neg(\forall x(x\in \Q\land x\ne 0)\Rightarrow \tan(x)\notin\Q)=\exists x(x\in\Q\land x\ne 0\land \tan(x)\in\Q)$.
+        \item $\neg(\forall x(\sin(x)<0\Rightarrow\neg(0 < x \lor x> \pi)))=\exists x(\sin(x)<0\land (0\le x\lor x \le \pi))$.
+        \item $\neg(\forall f((P(f)\land(Q(f)))\Rightarrow \neg R(f')))=\exists f((P(f)\land Q(f))\land R(f'))$. 
+        \item $\neg(\forall x,t(F(x,t)))=\exists x,t(\neg(F(x,t)))$.
+        \item $\neg(\forall x,y(E(x)\land E(y)\land x\ne y\land \neg T(y))\Rightarrow C(y))=\exists x,y(E(x)\land E(y)\land x\ne y\land \neg T(y) \land \neg C(y))$.
+    \end{enumerate}
+\end{solution}

@@ -1,0 +1,55 @@
+\section{More on Conditional Statements}
+It is important to understand conditional statements with quantifier variables, since they are a bit trickier than the ones with propositional variables. Consider for examples 
+$$
+(x \text{ is a multiple of } 6)\Rightarrow (x\text{ is even}).
+$$
+This is a true statement no matter which multiple of $6$ we pick. In fact, we can generalise the statement further: 
+$$
+\forall x\in\Z(x \text{ is a multiple of } 6 \Rightarrow (x \text{ is even})). 
+$$
+However, the converse, i.e. $(x \text{ is even}) \Rightarrow (x \text{ is a multiple of } 6)$ is not true in general. Since we can pick $x=2$. 
+Notice as well, that we only need one counterexample to prove some principle does not hold in genera, whereas coming up with many examples in order to generalise a principle is not a guarantee that the principle holds in general. We have to find a pattern to test, rather than give a few examples. 
+
+The above brings an important point about open sentences. The truth value of such a statement depends on the value of a certain variable. But if we put a universal quantifier in front (crudely speaking), the we get a false statement. Therefore, 
+$$
+(x \text{ is even}) \Rightarrow (x \text{ is a multiple of } 6)
+$$
+is not an open sentence. In general, given any two open sentences $P(x), Q(x)$ about some $x\in\Z$, the expression $\forall x\in\Z(P(x)\Rightarrow Q(x))$ will be either \emph{true} or \emph{false}, so it will become a statement, rather than remain an open formula. 
+
+Whenever, $P(x),Q(x)$ are open sentences concerning elements $x\in X$ for some set $X$, the expression $P(x)\Rightarrow Q(x)$ is understood to be the statement 
+$$
+\forall x\in X(P(x)\Rightarrow Q(x)).
+$$
+If a conditional statement is not excplicitly quantified, then there is an implied universal quantifier in front of it. 
+\begin{defn}
+    If $P,Q$ are statements or open sentences, then 
+    \begin{quote}
+        If $P$, then $Q$
+    \end{quote}
+    is a statement. This statement is true if it is impossible for $P$ to be true while $Q$ false. It is false if there is at least one instance in which $P$ is true but $Q$ is false. 
+\end{defn}
+
+So the following are \emph{true} statements: 
+$$
+x\in\R\Rightarrow x^{2}+1>0
+$$
+and 
+\begin{quote}
+    If a functio $f$ is differentiable on $\R$, then $f$ is continuous on $\R$. 
+\end{quote}
+And the following two are \emph{false}: 
+$$
+P(p)\Rightarrow O(p),
+$$
+where $P$ is prime and $O$ is odd. The counterexample is $p=2$. 
+And 
+\begin{quote}
+    If $f$ is a rational function, then $f$ has an asymptote.
+\end{quote}
+The countermodel or counterexample here is that $x^{2}$ is rational. 
+\subsection{Exercises for Section 18}
+No exercises. 
+
+
+
+ 

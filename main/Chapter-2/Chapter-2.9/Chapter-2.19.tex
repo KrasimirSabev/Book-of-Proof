@@ -1,0 +1,55 @@
+\section{Translating English To Symbolic Logic}
+When we read and write proofs of theorems we must be aware of the logical structure and meaning of the sentences. Sometimes it is helpful to parse them into expressions involving logical symbols. 
+\begin{example}
+    Consider the Mean Value Theorem from Calculus:
+    \begin{theorem}
+        If $f$ is continuous on the interval $[a,b]$ and differentiable on $(a,b)$, then there is a number $c\in(a,b)$ for which $f'(c)=\frac{f(b)-f(a)}{b-a}.$
+    \end{theorem}
+    A translation into symbolic logic would look like this: 
+    $$
+    ((f \text{ continuous on } [a,b] \land (f \text{differentiable on } (a,b))))\Rightarrow(\exists c\in(a,b)(f'(c)=\frac{f(b)-f(a)}{b-a}))
+    $$
+\end{example}
+
+\begin{example}
+    Consider Goldbach's Conjecture. 
+    \begin{theorem}
+        Every integer greater than $2$ is the sum of two primes. 
+    \end{theorem}
+    Let $P$ be the set of primes and $X=\{ 4,6,8,\dots \}$ the set of even integers greater than $2$. Then 
+    $$
+    (n\in X)\Rightarrow(\exists p,q\in P(n=p+q))
+    $$    
+    or 
+    $$
+    \forall n\in X \exists p,q\in P (n=p+q)
+    $$
+    Notice that the first translation has a more set-theoretic structure, whereas the second has a more logic-based structure. Both have the same meaning. So, a universally quantified formula can be expressed as a conditional statement. 
+\end{example}
+\begin{fact}
+    Suppose $X$ is a set and $Q(x)$ is a statement about $x$, for each $x\in X$. The following statements mean the same thing: 
+    $$
+    \forall x\in X,Q(x)\quad\quad (x\in X)\Rightarrow Q(x)
+    $$
+\end{fact}
+This is important because a lot of theorems have the form of a conditional statement. When one proves a theorem, they should consider what it is saying. Also, sometimes it is easier or more convenient to consider the conditional equivalent of the quantified formula. 
+
+\subsection{Exercises for Section 9}
+\begin{exercise}\label{ex:2.19.1}
+    Translate each of the following sentence into symbolic logic. 
+    \begin{enumerate}
+        \item If $f$ is a polynomial and its degree is greater than $2$, then $f'$ is not constant. 
+        \item The number $x$ is positive but the number $y$ is not positive. 
+        \item If $x$ is prime, then $\sqrt{x}$ is not a rational number. 
+        \item For every prime number $p$ there is another prime number $q$ with $q>p$.
+        \item For every positive number $\epsilon$, there is a positive number $\delta$ for which $\lvert x-a \rvert<\delta$ implies $\lvert f(x)-f(a)<\epsilon \rvert$. 
+        \item For every positive number $\epsilon$ there is a positive number $M$ for which $\lvert f(x)-b \rvert<\epsilon$, whenever $x>M$. 
+        \item There exists a real number $a$ for which $a+x=x$ for every real number $x$. 
+        \item I do not eat anything that has a face. 
+        \item If $x$ is a rational number and $x\ne 0$, then $\tan(x)$ is not a rational number. 
+        \item If $\sin(x)<0$, then it is not the case that $0\le x\le \pi$.
+        \item There is a Providence that protects idiots, drunkards, children and the United States of America. 
+        \item You can fool some of the people all of the time, and you can fool all of the people some of the time, but you cannot fool all of the people all of the time. 
+        \item Everything is funny as long as it is happening to somebody else. 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.19.1]{[Go to Solution]}

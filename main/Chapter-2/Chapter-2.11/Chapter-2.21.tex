@@ -1,0 +1,32 @@
+\section{Logical Inference}
+
+In short, a logical inference refers to the rules of inference we use to derive a certain conclusion. Consider the statement $P\Rightarrow Q$, we do not really know whether $P=T\text{ or }P=F,Q=F$, since the conditional statement itself does not ascribe the truth values to the propositions. What we know are the \emph{conditions} or the \emph{cases} under which the conditional will be true or false. However, consider we have the same conditional and we know that $P=T$, then it must follow that $Q=T$ as well. This is what we refer to when we talk about logical inferences.
+$$
+P\Rightarrow Q, P \vdash Q
+$$
+The above rule is called \emph{modus ponens} or MP for short. We have two other rules that are very frequent. 
+$$
+P\Rightarrow Q,\neg Q\vdash \neg P
+$$
+This is called \emph{modus tollens} or MT, and lastly 
+$$
+P\land Q,\neg P\vdash Q.
+$$
+This is elimination.\newline
+Some other useful rules are $\land$-introduction 
+$$
+P,Q\vdash P\land Q
+$$
+and $\land$-elimination 
+$$
+P\land Q\vdash P\quad P\land Q\vdash Q
+$$
+and $\lor$-introduction 
+$$
+P\vdash P\lor Q.
+$$
+
+
+
+
+ 

@@ -1,0 +1,103 @@
+\section{Negating Statements}
+
+Given any statement $P$, the statement $\neg P$ is called \emph{the negation} of $P$. 
+\begin{example}
+    Let
+    $$P=\text{You can solve an equation by factoring}$$ and $$Q= \text{you can solve an equation with the quadratic formula}$$. Then suppose we introduce a disjunction on these two statements. Then we have $P\lor Q$. What happens to $\neg (P\lor Q)$? 
+    $$
+    \neg (P\lor Q) = \text{You cannot solve an equation by factoring and with the quadratic formula.}
+    $$
+    Here it is important to note that this occurs because of De Morgan's Law. Remember that $\neg (P\lor Q)=\neg P \land \neg Q$. This should be reflected in our translation and understanding.  
+\end{example}
+
+\begin{example}
+    Suppose that $R$ stands for `The numbers $x,y$ are both odd'. Then $\neg R$ would be `Neither $x$ nor $y$ are odd'. We can also translate it to `At least one of $x,y$ is even'.
+\end{example}
+
+Now, let's move to quantified statements. Consider the following: 
+$$
+\neg(\forall x\in\N(P(x)))=\exists x\in\N(\neg P(x)).
+$$
+The first literally translates to `It is not the case that for any natural number, $P(x)$'. In turn, this means that \emph{at least} one natural number does not satisfy $P$. So, instead we can also use RHS from the formula above. In general the follwing two statements hold: 
+$$
+    \begin{aligned}
+        \neg(\forall x\in X(P(x)))&=\exists x\in X(\neg P(x))\\
+        \neg(\exists x\in X(P(x)))&=\forall x\in X(\neg P(x))
+    \end{aligned}
+$$
+\begin{example}
+    Let $R$ be `The square of every real number is non-negative'. Then: 
+    $$
+    \forall x\in\R(x^{2}>0), 
+    $$
+    so the negation would be:
+    $$
+    \neg(\forall x\in\R(x^{2}>0)) \text{ or } \exists x\in\R(x^{2}<0).
+    $$
+\end{example}
+ 
+\begin{example}
+    If a statement has multiple quantifiers, then negating it will involve several iterations of the quantifier equivalences. Suppose $S$ represent `For every real number $x$, there is a real number $y$, , such that $y^{3} = x$'. Then 
+    $$
+    \forall x\in\R\exists y\in\R(y^{3}=x)
+    $$
+    The negation would look thus: 
+    $$
+        \begin{aligned}
+            \neg(\forall x\in\R\exists y\in\R(y^{3}=x))&=\exists x\in\R\neg\exists y\in\R(y^{3}=x)\\
+            &=\exists x\in\R\forall y\in\R\neg(y^{3}=x)\\
+            &=\exists x\in\R\forall y\in\R(y^{3}\ne x).
+        \end{aligned}
+    $$
+In natural language we can translate the above as `There is a natural number $x$ for which $y^{3}\ne x$ is false $y$'.     
+\end{example}
+
+Negating conditional statements is really important, predominantly for proving theorems. So consider the expression $\neg(P\Rightarrow Q)$. 
+$$
+P\Rightarrow Q = \neg P\lor Q
+$$
+So, the negation of this would be: 
+$$
+\neg (\neg P\lor Q) = P\land \neg Q \quad \text{by De Morgan's Law}
+$$
+
+\begin{example}
+    If $a$ is a constant and $R$ represents `If $a$ is odd, then $a^{2}$ is odd'. Then by the above losung, we have:
+    $$
+    P\land \neg Q
+    $$
+    So, $a$ is odd and $a^{2}$ is even. 
+\end{example}
+
+\begin{example}
+    Let $x$ be a variabl and suppose $R$ represents `If $x$ is odd, then $x^{2}$ is odd'. The difference here is that the above statement is a \emph{universally quantified statement} in disguise. So 
+    $$
+    \forall x\in\Z(O(x)\Rightarrow (O(x^{2})))
+    $$
+    Then the negation would look thus 
+    $$
+    \neg(\forall x\in\Z(O(x)\Rightarrow(O(x^{2}))))=\exists x\in\Z(O^{x}\land \neg O(x^{2})).
+    $$
+    Or in English `There is an integer that is odd and its square is not'. 
+\end{example}
+
+\subsection{Exercises for Section 20}
+\begin{exercise}\label{ex:2.20.1}
+    Negate the following sentences. 
+    \begin{enumerate}
+        \item The number $x$ is positive but the number $y$ is not positive. 
+        \item If $x$ is prime, then $\sqrt{x}$ is not a rational number. 
+        \item For every pirme number $p$, there is another prime number $q$, such that $q>p$. 
+        \item For ever positive number $\epsilon$, there is a positive number $\delta$ such that $\lvert x-a \rvert<\delta$ implies $\lvert f(x)-f(a) \rvert<\epsilon$
+        \item For every positive number $\epsilon$, there is a positive number $M$ for which $\lvert f(x)-b \rvert<\epsilon$ whenever $x>M$. 
+        \item There exists a real number $a$ for which $a+x=x$ for every real number $x$.
+        \item I do not eat anything with a face. 
+        \item If $x$ is a rational number and $x\ne 0$, then $\tan(x)$ is not rational. 
+        \item If $\sin(x)<0$, then it is not the case that $0 \le x \le \pi$.
+        \item If $f$ is a polynomial and its degree is greater than $2$, then $f'$ is not constant. 
+        \item You can fool all of the people all of the time. 
+        \item Whenever I have to choose between two evils, I choose the one I have not tried yet. 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.20.1]{[Go to Solution]}
+
+
