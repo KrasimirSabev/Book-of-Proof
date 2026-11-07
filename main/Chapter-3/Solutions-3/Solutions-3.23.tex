@@ -1,0 +1,190 @@
+\section{Solutions to Exercises From Section 24}
+\begin{solution}\label{sol:2.24.1}\ref{ex:2.24.1}
+    There are a few ways to solve this problem. However, the easiest is to use the subtraction and multiplication principles. First, we find all the possible line ups, then we find all the possible outcomes with just black cards and subtract them from the total. 
+    $$
+    \lvert U \rvert=52\cdot 51\cdot 50\cdot 49\cdot 48=311,975,200.
+    $$
+    then 
+    $$
+    \lvert B \rvert=26\cdot 25\cdot 24\cdot 23\cdot 22= 7, 893,600.
+    $$
+    Therefore, 
+    $$
+    \lvert B^{\complement} \rvert=303,981,600.
+    $$
+    The combinations with all black cards is already known above. Now, we look for the combinations of just hearts. We have $13$ hearts to check. 
+    $$
+    \lvert H \rvert=13\cdot 12\cdot 11\cdot 10 \cdot 9=154,440
+    $$
+    Now, we add the two results together:
+    $$
+    \lvert B \rvert+\lvert H \rvert=8,048,040.
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:2.24.2}\ref{ex:2.24.2}
+    We know that there $13$ cards in a suit. So from the previous exercise we have that the possible outcomes for $\lvert H \rvert=154,440$. We simply add all the four suits together to get the total outcomes of a lineup with cards from the same suit. 
+    $$
+    \lvert H \rvert+\lvert S \rvert+\lvert C \rvert+\lvert D \rvert=617,760.
+    $$   
+\end{solution}
+
+\begin{solution}\label{sol:2.24.3}\ref{ex:2.24.3}
+    There are two colours to consider, black and red. We already know, how many outcomes are there for all black cards, and there will be just as many for the red cards. So we add them together. 
+    $$
+    \lvert B \rvert+\lvert R \rvert=7,893,600+7,893,600=15,787,200.
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:2.24.4}\ref{ex:2.24.4}
+    There are $4$ queens in a deck of cards. Notice that we have $48$ cards remaining in the deck. So, the calculation for the queen in the first position would be 
+    $$
+    \lvert Q_1 \rvert=4\cdot 48\cdot 47\cdot 46\cdot 45=18,679,680.
+    $$
+    We multiply that result by $5$, for each position and we get 
+    $$
+    \lvert Q \rvert=\lvert Q_1 \rvert+\lvert Q_2 \rvert+\lvert Q_3 \rvert+\lvert Q_4 \rvert+\lvert Q_5 \rvert=93,398,400.
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:2.24.5}\ref{ex:2.24.5}
+    This one is slightly trickier. We have to calculate each \emph{type} of number separately. Let's break them down. First we have $9$ outcomes for all $1$-digit numbers. Then we have $9$ outcomes for the first $10$ $2$-digit numbers. So $9\cdot 9=81$. This covers all the numbers from $10$-$99$ without the repeated numbers ($11,22,\dots$). Next, we have all the $3$-digit numbers. We already know which $2$-digit numbers to avoid, so we take those outcomes and multiply them by $8$. Consider that $100,101,110,111,112,\dots$ are not valid. 
+    $$
+    81\cdot 8=648.
+    $$
+    Then finally, we take those outcomes and multiply them by $7$, this takes care of cases like $1100, 1101,1111$ and so on. 
+    $$
+    648\cdot 7=4536
+    $$
+    The total is 
+    $$
+    \lvert X \rvert+\lvert Y \rvert+\lvert W \rvert+\lvert Z \rvert=5274.
+    $$
+    
+    For the second question, we take the total number of outcomes and subtract, all the non-repetitive ones. 
+    $$
+    9999-5274=4725.
+    $$
+\end{solution} 
+
+\begin{solution}\label{sol:2.24.6}\ref{ex:2.24.6}
+    \begin{enumerate}
+        \item We can use the subtraction principle similarly to the way we did in the previous exercises. Suppose that 
+        $$
+        \lvert U \rvert=5^{5}=3125
+        $$
+        These are all the possible outcomes. Then we find the ones that do not repeat and subtract them from the total. 
+        $$
+        \lvert N \rvert=5!=120.
+        $$
+        Thus 
+        $$
+        \lvert U \rvert-\lvert N \rvert=3005.
+        $$
+        \item This case is similar, we have 
+        $$
+        \lvert U \rvert=6^{5}=7776
+        $$
+        Since there are $5$ letters and the list is of length-$6$, then each case will have at least one repeating leter. 
+    \end{enumerate}
+\end{solution}
+
+\begin{solution}\label{sol:2.24.7}\ref{ex:2.24.7}
+    Let $A=26$ be all the lowercase letters and $B=26$ be all the uppercase letters. Then the total possible outcomes are 
+    $$
+    \lvert U \rvert=52^{5}=380,204,032.
+    $$
+    Now, we subtract all the only lowercase outcomes from the total and we get our conclusion. 
+    $$
+    \lvert U \rvert-\lvert A \rvert=380,204,032-26^{5}=368,322,656.
+    $$
+    These are the outcomes where there is \emph{at least one uppercase letter}. 
+
+    The second questions essentially asks us to get rid off the combinations with only uppercase letters, since $\lvert A \rvert=\lvert B \rvert$, we have that 
+    $$
+    \lvert U \rvert-\lvert A \rvert-\lvert B \rvert=356,441,280.
+    $$
+    This exercise can be made more fun if we add all kinds of characters, like digits or special characters. 
+\end{solution}
+
+\begin{solution}\label{sol:2.24.8}\ref{ex:2.24.8}
+    \begin{enumerate}
+        \item We have $3$ vowels, so we fix the first slot for them, and we use the remaining letters. Don't forget to subtract the fixed vowels from the total number of letters. 
+        $$
+        3\cdot 7\cdot 6 \cdot 5 \cdot 4 = 2520.
+        $$
+        \item We have to account for the vowel we use at the start in the final slot, so 
+        $$
+        3\cdot 7 \cdot 6 \cdot 5 \cdot 2=1260.
+        $$
+        \item We simply find all possible non-repetitive combinations with $A$ fixed in different locations. 
+        $$
+        \lvert A_{1} \rvert =1\cdot 9\cdot 8\cdot 7 \cdot 6 =  3024
+        $$
+        We add all the other options with $A$ in the second, third, fourth and fifth positions. 
+        $$
+        \lvert A \rvert=\lvert A_{1} \rvert+\lvert A_{2} \rvert + \lvert A_{3} \rvert + \lvert A_{4} \rvert + \lvert A_{5} \rvert=15,120.
+        $$
+        (Additionally, one can find the total possible combinations, adn subtract all the ones that do not have $A$ in there.)
+    \end{enumerate}
+\end{solution}
+
+\begin{solution}\label{2.24.9}\ref{ex:2.24.9}
+    The list has length-$6$ and we have a total of $8$ characters to use. We have $2$ vowels and $6$ consonants. We want two consecutive vowels, so we have 
+    $$
+    2\cdot 1 \cdot 6\cdot 5\cdot 4\cdot 3=720.
+    $$
+    These are the outcomes when the two vowels are in the first and second position, consider them as a single unit, then we have $5$ other placess we can put them 
+    $$
+    \begin{aligned}
+        &**----\\
+        &-**---\\
+        &--**--\\
+        &---**-\\
+        &----**
+    \end{aligned}
+    $$
+    Therefore, the total number of outcomes is 
+    $$
+    720\cdot 5 = 3600.
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:2.24.10}\ref{ex:2.24.10}
+    First we find the total possible outcomes with $S$ as a final letter. 
+    $$
+    \lvert S \rvert=5^{5}=3125.
+    $$
+    Now, we consider all the possible outcomes where $O$ does not appear. So 
+    $$
+    \lvert O^{\complement} \rvert= 4^{5}=1024
+    $$
+    Then, we look for the cases where $O$ appears at most once. 
+    $$
+    \lvert O_{1} \rvert= 4^4=256.
+    $$
+    This is when $O$ is in the first position, so we have to account for the other $5$ positions. Then 
+    $$
+    \lvert O_{1,2,3,4,5} \rvert= 5\cdot 4^{4}=1280
+    $$
+    If we now subtract all the cases where $O$ does not appear and whre $O$ appears once from the total we get the answer. 
+    $$
+    \lvert S \rvert-\lvert O^{\complement} \rvert-\lvert O_{1,2,3,4,5} \rvert=821.
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:2.24.11}\ref{ex:2.24.11}
+    So, we can take every integer that ends in $5$ or $0$. From the $1$-digit integers we have only $1$ number that qualifies. From the two digit numbers, we have $2$ numbers that qualify from the tens, $2$ from the twenties, and so on. So, $18$ numbers in total. Then from the hundreds, we have $10\cdot 18$. Lastly, we add $1000$ to the list as well. So 
+    $$
+    1 + 18 + 180 + 1= 200
+    $$
+    Notice that we can simply divide $1000\div 5$ to get our answer. The other $800$ numbers are not divisible by $5$. 
+\end{solution}
+
+\begin{solution}\label{sol:2.24.12}\ref{ex:2.24.12}
+    we have $6!=720$ arrangements of the mathematics books, $4!=24$ arrangements of the physics books and $3!=6$ arrangements of the chemistry books. Now, notice that there are $3!=6$ ways these could be arranged. So, 
+    $$
+    720\cdot 24\cdot 6\cdot 6 = 622,080
+    $$
+    total outcomes. 
+\end{solution}

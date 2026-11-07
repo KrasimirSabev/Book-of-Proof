@@ -1,1 +1,90 @@
-\section*{Solutions to Exercises From Section 22}
+\section*{Solutions to Exercises From Section 23}
+\begin{solution}\label{sol:2.22.1}\ref{ex:2.22.1}
+    \begin{enumerate}
+        \item There are $6^{4}=1296$ length-$4$ lists with repetition.
+        \item There are $5^{3}=125$ combinations that start with $T$. The reason is that we fix the first letter and then pick at random the other three options. 
+        \item There are $5\cdot 6^{3}=1080$ repetitive lists. We pick the $5$ other letters in the first slot, and then the other $3$ slots can be any letter we wish.
+    \end{enumerate}
+\end{solution}
+
+\begin{solution}\label{sol:2.22.2}\ref{ex:2.22.2}
+    We can consider this problem from two angles, how many repetitive outcomes of length-$3$ are there or how many non-repetitive outcomes are there. 
+    Repetitive ones are:
+    $$
+    26^{3}=17,576.
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:2.22.3}\ref{ex:2.22.3}
+    \begin{enumerate}
+        \item There are $6$ letters and length-$3$ list. So there are $6^{3}=216$ outcomes with repetition. 
+        \item Without repetition, there are $6\cdot5\cdot4=120$ outcomes. 
+        \item Repetition is not allowed and the list has an $A$ somewhere, so 
+        $$
+        1\cdot 5\cdot 4 = 20
+        $$
+        This is with $A$ in the first position, so there are $60$ total outcomes. 
+        \item From the total we subtract all the outcomes that do not have an $A$, then we will get all the outcomes with repetition and $A$. 
+        $$
+        6^{3}-5^{3}=91.
+        $$
+    \end{enumerate}
+\end{solution}
+
+\begin{solution}\label{sol:2.22.4}\ref{ex:2.22.4}
+    We have a list with $(\text{type, size, place})$. So, 
+    $$
+    2\cdot 3\cdot 2 = 12.
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:2.22.5}\ref{ex:2.22.5}
+    \begin{enumerate}
+        \item We have $2^{8}=256$.
+        \item We have $2^{7}=128$ since the last digit is fixed. 
+        \item Here we fix two slots, so $2^{6}=64$.
+        \item There are $2^{6}$ are the combinations $*1*1***$, then we can find $*0*1****$. So we have $128+64=192$. This is not the best solution here, because we are accounting for overcounting but there are better ways to solve this problem. 
+    \end{enumerate}
+\end{solution}
+
+\begin{solution}\label{sol:2.22.6}\ref{ex:2.22.6}
+    There are a total of $2\cdot 6\cdot 52 = 624$ outcomes. 
+    
+    There are $2\cdot 52=104$ outcomes where the dice lands on $3$. Since $3$ is fixed, we are effectively, multiplying $2\cdot 1\cdot 52$.
+
+    There are $2\cdot 3\cdot 52= 312$ outcomes where the dice lands on an odd number. 
+
+    Lastly, $2\cdot 3\cdot 4 = 24$ outcomes, where the card is a King and the dice is odd.  
+\end{solution}
+
+\begin{solution}\label{sol:2.22.7}\ref{ex:2.22.7}
+    \begin{enumerate}
+        \item We have a length-$4$ list with repetition allowed. So, 
+        $$
+        26^{4}=456,976.
+        $$
+        \item The second case requires that no two consecutive letters are the same. Therefore, 
+        $$
+        26\cdot 25^{3}=406,250
+        $$
+        The reason is that the first slot is a free for all, the second one has to account for the first letter, and the third one has to account for the second, and the fourth for the third. So all options for a letter aside from the first one are the remaining $25$.
+    \end{enumerate}
+\end{solution}
+
+\begin{solution}\label{sol:2.22.8}\ref{ex:2.22.8}
+    We have a list of lenght $10$, that looks thus $(H,H,T,H,\dots)$ so we are allowed repetition because every outcome is independent. There is no conditional clause. 
+    $$
+    2^{10}=1024.
+    $$
+\end{solution}
+
+\begin{solution}\label{sol:2.22.9}\ref{ex:2.22.9}
+    We have $(\text{colour, size, transmission})$, then $5\cdot 3 \cdot 2=30$. 
+\end{solution}
+
+\begin{solution}\label{sol:2.22.10}\ref{ex:2.22.10}
+    $$
+    6^{4}=1296
+    $$
+    possible outcomes from $4$ independent dice rolls. 
+\end{solution}

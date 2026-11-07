@@ -1,2 +1,149 @@
 \section{Multiplication Principle}
 
+Many practical problems involve counting the number of possible lists that satisfy some condition or property. 
+
+Suppose that the first entry must be an element of the set $\{ a,b,c \}$ and the second $\{ 5,7 \}$ and the third $\{ a,x \}$. So 
+$$
+(a,5,a)\quad (b,5,a)
+$$
+would be two lists. The way to calculate how many lists such sets will produce is to multiply the number of elements. Their product will be the total amount of possible lists. 
+
+Consider that you have a list of letters $(a,b,c,d)$ and you have to produce all possible lists, excluding ones that have repeated letters. So $(c,a,b,d)$ is good but $(a,a,b,c)$ is not. Thinking about the problem in terms of diagrams is more useful. We start with $4$ choices, followed by $3$ choices, followe dby $2$ choices, followed by $1$ choice to complete the list. So to calculate the total amount of possible lists we perform the following calculation 
+$$
+4\cdot3\cdot2\cdot1=24.
+$$
+\begin{fact}
+    (Multiplication Principle) Suppose in making a list of length $n$ there are $a_{1}$ possible choices for the first entry, $a_{2}$ possible choices for the second entry, and so on. Then the total number of different lists that can be made this way is the product $a_1\cdot a_2\cdot\cdots a_n $.
+\end{fact}
+\begin{example}
+    A standard license plate consists of three letters followed by four digits. For example, $JRB-4412$ and $MMX-8910$. How many different standard license plates are possible? 
+    \begin{solution}
+        We apply the multiplication principle. There are $3$ letters and $4$ numbers, so we can pick any of the $26$ letters up to three times and they can be repeating. Next we pick a number from $0$ to $9$, so we have to pick $4$ of those digits, again with repetition allowed. Therfore, 
+        $$
+        26^{3}\cdot 10^{4}=175,760,000
+        $$
+        possible standard license plates.
+    \end{solution}
+\end{example}
+
+\begin{example}
+    In ordering a latte, you have a choice of whole, skim or soy milk. Additionally, you can pick, small, medium, large and add either one or two shots. How many choices do you have in ordering one drink?
+    \begin{solution}
+        We essentially have a list of three things $(\text{milk, size, shots})$. So, we have 
+        $$
+        3\cdot 3\cdot 2 = 18.
+        $$
+    \end{solution}
+\end{example}
+
+\begin{example}
+    Consider a list of length $4$ made with symbols $A,B,C,D,E,F,G$.
+    \begin{enumerate}
+        \item How many such lists are possible, if repetition is allowed? 
+        \item How many such lists are possible if repetition is not allowed? 
+        \item How many are there if repetition is not allowed and the list has an $E$? 
+        \item How many are there if repetition is allowed and the list has an $E$? 
+    \end{enumerate}
+    \begin{solution}
+        (1) We have a list of $4$ letters and repetition is allowed. So since we have $7$ possibilities we calculate 
+        $$
+        7^{4}=2401.
+        $$
+        
+        (2) Similarly, to above but to account for the repeating letters we calculate 
+        $$
+        7\cdot 6 \cdot 5 \cdot 4=840.
+        $$
+        
+        (3) Now, we have $4$ positions and one of them is $E$, so there are three remaining where we can pick any letter without it repeating. So, we have 
+        $$
+        6\cdot 5 \cdot 4 = 120.
+        $$
+        The above result is for one permutation, for example where $(E,\ast, \ast, \ast)$ now we have to account for the other 3 options, so in total we have: 
+        $$
+        4\cdot 120 = 480.
+        $$
+        
+        (4) In this case $E$ is allowed and repetition is allowed. So we can calculate the lists without $E$ and subtract them from the total to get all the possible lits with $E$ and repetition. This is the easiest way to do it. Thus 
+        $$
+        6^{4}=1296
+        $$
+        are all the lists without $E$, so 
+        $$
+        2401-1296=1105
+        $$
+        which are all the lists with $E$ somewhere in there and repetition. 
+    \end{solution}
+\end{example}
+
+\begin{example}
+    A non-repetitive list of length $5$ is to be made from the symbols $A,B,C,D,E,F,G$. The first entry must be either $B,C,D$ and the last one must be a vowel. How many such lists are possible? 
+    \begin{solution}
+        We again think in terms of slots. The first slot has $3$ possibilities, the second has $5$, the third one $4$ and so on until the last one. The last one has $2$. So 
+        $$
+        3\cdot 5\cdot 4 \cdot 3\cdot 2=360.
+        $$
+    \end{solution}
+\end{example}
+\subsection{Exercises for Section 22}
+
+\begin{exercise}\label{ex:2.22.1}
+    Consider a list made from the letters $THEORY$ with repetition allowed. 
+    \begin{enumerate}
+        \item How many length-$4$ lists are there? 
+        \item How many length-$4$ lists are there that begin with $T$? 
+        \item How many length-$4$ lists are there that do not begin with $T$? 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.22.1]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.2}
+    Airports are identified with $3$-letter codes. For example, Richmond, Virginia has the code $RIC$, and Memphis, Tennessee has $MEM$. How many different $3$ letter codes are possible? 
+\end{exercise}\hyperref[sol:2.22.2]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.3}
+    How many lists of length-$3$ can be made from the symbols $A,B,C,D,E,F$ if
+    \begin{enumerate}
+        \item \ldots repetiotion is allowed. 
+        \item \ldots repetition is not allowed. 
+        \item \ldots repetition is not allowed and the list must costain the letter $A$. 
+        \item \ldots repetition is allowed and the list must contain the letter $A$.  
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.22.3]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.4}
+    In ordering coffee you have a choice of regular or decaf; small, medium or large; here or to go. How many different ways are there to order a coffee? 
+\end{exercise}\hyperref[sol:2.22.4]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.5}
+    This problem involves $8$-digit binary strings such as $10011011$ or $01010101$. 
+    \begin{enumerate}
+        \item How many such strings are there? 
+        \item How many such strings end in $0$? 
+        \item How many such strings have $1$'s for their second and fourth digit? 
+        \item How many such strings have $1$'s for their second \textbf{or} fourth digits? 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.22.5]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.6}
+    You toss a coin, then roll a dice, then draw a card from a standard $52$-card deck. How many different outcomes are there? How many outcomes are there in which the dice lands on $3$? How many outcomes are there in which the dice lands on an odd number? How many outcomes are there in which the dice lands on an odd number and the card is a King? 
+\end{exercise}\hyperref[sol:2.22.6]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.7}
+    This problem concerns $4$-letter codes made from the letters of the alphabet. 
+    \begin{enumerate}
+        \item How many such codes can be made? 
+        \item How many such codes have no two consecutive letters the same? 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.22.7]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.8}
+    A coin is tossed $10$ times in a row. How many possible sequences of heads and tails are there? 
+\end{exercise}\hyperref[sol:2.22.8]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.9}
+    A new car comes in a choice of five colours, three engine sizes and two transmissions. How many different combinations are there? 
+\end{exercise}\hyperref[sol:2.22.9]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.22.10}
+    A dice is tossed four times in a row. How many different outcomes are possible? 
+\end{exercise}\hyperref[sol:2.22.10]{[Go to Solution]}

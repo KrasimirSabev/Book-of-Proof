@@ -1,0 +1,109 @@
+\section{The Addition and Subtraction Principles}
+
+The addition principle asserts that if a set \emph{can} be broken down into pieces, then the size of the set will be the sum of the sizes of all the partitions. 
+\begin{fact}
+    (\textbf{Addition Principle}). Suppose a finite set $X$ can be decomposed as a union $X=X_{1}\cup X_{2}\cup\dots\cup X_{n}$. Where $X_{i}\cap X_{j}=\varnothing$ whenever $i\ne j$. Then $\lvert X \rvert=\lvert X_{1} \rvert+\lvert X_{2} \rvert + \cdots +\lvert X_{n} \rvert$.
+\end{fact}
+Let us consider some examples. 
+\begin{example}
+    How many even $5$ digit numbers are there for which no digit is $0$ and $6$ appears only once? 
+    \begin{solution}
+        Assume that $X$ is the set of all such numbers. Our task is to find $\lvert X \rvert$. We partition it into $5$ parts, so 
+        $$
+        X=X_{1}\cup X_{2}\cup X_{3}\cup X_{4}\cup X_{5}
+        $$
+        where each $X_{i}$ has the $i$th digit as $6$. 
+        Now, $X_{i}$ has the digit $6$ shifted once to the right. We start with 
+        $$
+        X_{1}=6****
+        $$
+        Since the first position is fixed, we have 
+        $$
+        8^{3}\cdot 3=1536
+        $$
+        because the last slot has to be an even number. Likewise for $\lvert X_2 \rvert=\lvert X_3 \rvert=\lvert X_4 \rvert=1536$. However, $\lvert X_5 \rvert$ is slightly different, since $6$ is fixed in the last position, so the number is guaranteed to be even, we just permute the rest of the slots, therefore 
+        $$
+        \lvert X_{5} \rvert=8^{4}=4096.
+        $$
+        So, the total is 
+        $$
+        \lvert X \rvert=10,240.
+        $$
+    \end{solution}
+\end{example}
+
+The next method is the \emph{subtraction principle}. Suppose some set $X\subseteq U$, where $U$ is a universal set. Then $X^{\complement}=U-X$ would give us all the things in $U$ that are not in $X$. And so the subtraction principle takes the following form: 
+$$
+\lvert U-X \rvert=\lvert U \rvert-\lvert X \rvert.
+$$
+\begin{fact}
+    \textbf{Subtraction Principle}. If $X\subseteq U$ and $U$ is finite, then $\lvert X^{\complement} \rvert=\lvert U \rvert-\lvert X \rvert$. 
+\end{fact}
+
+\begin{example}
+    How may lentgth-$4$ lists can be made from the symbols $ABCDEFG$, if the list has at least one $E$ and repetition is allowed? 
+    \begin{solution}
+        Here the idea is to use the subtraction principle. So we can calculate all the possible outcomes and subtract the ones without $E$ from the total. So $\lvert U \rvert=7^{4}=2401$ and let $X$ be all the outcomes without $E$, so $\lvert X \rvert=6^{4}=1296$. Thus 
+        $$
+        \lvert X^{\complement} \rvert=\lvert U \rvert-\lvert X \rvert=2401-1296=1105.
+        $$
+    \end{solution}
+\end{example}
+
+\subsection{Exercises from Section 24}
+\begin{exercise}\label{ex:2.24.1}
+    Five cards are dealt from a standard $52$-deck of cards and lined up in a row. How many such lineups are there that have at least one red card? How many such lineps are there in which the cards are either all black or all hearts? 
+\end{exercise}\hyperref[sol:2.24.1]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.2}
+    Five cards are dealt off a standard $52$-deck and lined up in a row. How many such lineups are there in which all $5$ cards are of the same suit? 
+\end{exercise}\hyperref[sol:2.24.2]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.3}
+    Five cards are dealt off of a standard $52$-deck and lined up in a row. How many such lineuprs are there in which all $5$ cards are of the same colour? 
+\end{exercise}\hyperref[sol:2.24.3]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.4}
+    Five cards are dealt off a standard $52$-deck and lined up in a row. How many such lineups are tere in which exactly one of the cards is a queen? 
+\end{exercise}\hyperref[sol:2.24.4]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.5}
+    How many integers between $1$-$9999$ have no repeated digits? How many have at least one? 
+\end{exercise}\hyperref[sol:2.24.5]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.6}
+    Consider lists made from the symbols $A,B,C,D,E$, with repetition allowed. 
+    \begin{enumerate}
+        \item How many such length-$5$ lists have at least one letter repeated? 
+        \item How many such length-$6$ lists have at least one letter repeated?
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.24.6]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.7}
+    A password on a certain site must be five characters long, made from letters of the alphabet, and have at least one upper case letter. How many different passwords are there? What if there must be a mix of upper and lower case? 
+\end{exercise}\hyperref[sol:2.24.7]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.8}
+    This problem concerns lists made from letters $ABCDEFGHIJ$.
+    \begin{enumerate}
+        \item How many length-$5$ lists can be made from these letters if repetition is not allowed and the list must begin with a vowel? 
+        \item How many length-$5$ lists can be made from these letters if repetition is not allowed and the list must begin and end with a vowel? 
+        \item How many length-$5$ lists can be made from these letters if repetition is not allowed and the list must contain exactly one $A$? 
+    \end{enumerate}
+\end{exercise}\hyperref[sol:2.24.8]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.9}
+    Consider lists of length-$6$ made from the letters $ABCDEFGH$. How many such lists are possible if repetition is not allowed and the list contains two consecutive vowels? 
+\end{exercise}\hyperref[sol:2.24.9]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.10}
+    Consider the lists of length-$6$ made with the symbols $PROFS$ where repetition is allowed. How many such lists can be made if the list must end in an $S$ and the symbol $O$ is used more than once? 
+\end{exercise}\hyperref[sol:2.24.10]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.11}
+    How many integers between $1$-$1000$ are divisible by $5$? How many are not divisible by $5$? 
+\end{exercise}\hyperref[sol:2.24.11]{[Go to Solution]}
+
+\begin{exercise}\label{ex:2.24.12}
+    Six math books, four physics books and three chemistry books are arranged n a shelf. How many arrangements are possible if all books of the same subject are grouped together? 
+\end{exercise}\hyperref[sol:2.24.12]{[Go to Solution]}
